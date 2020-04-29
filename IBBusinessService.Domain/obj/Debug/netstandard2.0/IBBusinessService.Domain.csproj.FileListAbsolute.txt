@@ -1,0 +1,9 @@
+D:\Projects\IBBusinessService\IBBusinessService.Domain\bin\Debug\netstandard2.0\IBBusinessService.Domain.deps.json
+D:\Projects\IBBusinessService\IBBusinessService.Domain\bin\Debug\netstandard2.0\IBBusinessService.Domain.dll
+D:\Projects\IBBusinessService\IBBusinessService.Domain\bin\Debug\netstandard2.0\IBBusinessService.Domain.pdb
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.csprojAssemblyReference.cache
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.AssemblyInfoInputs.cache
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.AssemblyInfo.cs
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.dll
+D:\Projects\IBBusinessService\IBBusinessService.Domain\obj\Debug\netstandard2.0\IBBusinessService.Domain.pdb
