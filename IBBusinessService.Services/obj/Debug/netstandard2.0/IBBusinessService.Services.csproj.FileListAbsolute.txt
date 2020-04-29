@@ -7,3 +7,12 @@ D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.
 D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.AssemblyInfo.cs
 D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.dll
 D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.deps.json
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.csprojAssemblyReference.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.csproj.CoreCompileInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.AssemblyInfoInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.AssemblyInfo.cs
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.pdb
