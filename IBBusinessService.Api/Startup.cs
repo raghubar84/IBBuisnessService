@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;using Microsoft.EntityFrameworkCore;
+using IBBusinessService.Data.Models;
 
 namespace IBBusinessService.Api
 {
@@ -26,6 +27,12 @@ namespace IBBusinessService.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Fetching Connection string from APPSETTINGS.JSON  
+            var ConnectionString = Configuration.GetConnectionString("IBBusinessConnectionString");
+
+            //Entity Framework  
+            services.AddDbContext<IBBusinessContext>(options => options.UseSqlServer(ConnectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
