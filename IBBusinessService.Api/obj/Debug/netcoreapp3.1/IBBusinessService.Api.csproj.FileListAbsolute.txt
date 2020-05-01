@@ -154,7 +154,9 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runt
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csprojAssemblyReference.cache
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CoreCompileInputs.cache
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cache

@@ -1,13 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repositories\CourseRepository.cs" />
+    <Compile Remove="Repositories\ProgramMasterRepository.cs" />
+    <Compile Remove="UnitOfWork_Bak.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Configurations\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
