@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace IBBusinessService.Data.Repositories
 {
     public class ProgramMasterRepository
-    {
-        //private IBBusinessContext _dbContext = new IBBusinessContext();
+    {        
         private IBBusinessContext _dbContext;
         public ProgramMasterRepository(IBBusinessContext dbContext)
         {

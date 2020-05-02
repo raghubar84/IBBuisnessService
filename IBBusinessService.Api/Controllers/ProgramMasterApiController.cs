@@ -15,14 +15,7 @@ namespace IBBusinessService.Api.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ProgramMasterApiController : ControllerBase
-    {
-        //private readonly IBBusinessContext _context;
-        //private UnitOfWork _unitOfWork;
-        //public ProgramMasterApiController(IBBusinessContext context)
-        //{
-        //    //_context = context;
-        //    _unitOfWork = new UnitOfWork(context);
-        //}   
+    {       
 
         private ProgramMasterService _programMasterService;
         public ProgramMasterApiController(IBBusinessContext context)
@@ -34,32 +27,39 @@ namespace IBBusinessService.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgramMaster>>> Get()
         {
-            return await _programMasterService.GetProgram();
+            return await _programMasterService.GetAll();
         }
 
         // GET: api/ProgramMasterApi/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "Get")]        
+        public async Task<ActionResult<ProgramMaster>> Get(int id)
         {
-            return "value";
+            return await _programMasterService.GetDetails(id);
         }
 
         // POST: api/ProgramMasterApi
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost]        
+        public async Task<ActionResult<ProgramMaster>> Post([FromBody]ProgramMaster program)
         {
+            return await _programMasterService.Post(program);
         }
 
         // PUT: api/ProgramMasterApi/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<ProgramMaster>> Put(int id, [FromBody] ProgramMaster program)
         {
+            if (id != program.ProgramId)
+            {
+                return BadRequest();
+            }
+            return await _programMasterService.Put(id, program);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<bool> Delete(int id)
         {
+            return await _programMasterService.Delete(id);
         }
     }
 }
