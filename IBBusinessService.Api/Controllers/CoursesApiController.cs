@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IBBusinessService.Data;
+using IBBusinessService.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using IBBusinessService.Data.Models;
 
 namespace IBBusinessService.Api.Controllers
 {

@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IBBusinessService.Data;
-using IBBusinessService.Data.Models;
 using IBBusinessService.Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IBBusinessService.Services;
+using IBBusinessService.Domain.Models;
+using IBBusinessService.Domain.Services;
+using IBBusinessService.Api.Filters;
 
 namespace IBBusinessService.Api.Controllers
 {
+    [CustomAuthorization]
     [Route("api/[controller]")]
     [ApiController]
     public class ProgramMasterApiController : ControllerBase
     {       
 
-        private ProgramMasterService _programMasterService;
+        private IProgramMasterService _programMasterService;
         public ProgramMasterApiController(IBBusinessContext context)
         {
             _programMasterService = new ProgramMasterService(context);
         }
+
 
         // GET: api/ProgramMasterApi
         [HttpGet]

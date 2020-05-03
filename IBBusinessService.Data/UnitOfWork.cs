@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IBBusinessService.Data.Models;
 using IBBusinessService.Data.Repositories;
+using IBBusinessService.Domain.Models;
 
 namespace IBBusinessService.Data
 {
     public class UnitOfWork : IDisposable
     {
-        private IBBusinessContext _dbContext;       
+        private IBBusinessContext _dbContext ;       
         private GenericRepository<ProgramMaster> _programMasterRepository;
+        private GenericRepository<ProgramGroup> _programGroupRepository;
         private GenericRepository<Course> _courseRepository;
-
 
         public UnitOfWork(IBBusinessContext dbContext)
         {
@@ -27,6 +27,18 @@ namespace IBBusinessService.Data
                     this._programMasterRepository = new GenericRepository<ProgramMaster>(_dbContext);
                 }
                 return _programMasterRepository;
+            }
+        }
+
+        public GenericRepository<ProgramGroup> ProgramGroupRepository
+        {
+            get
+            {
+                if (this._programGroupRepository == null)
+                {
+                    this._programGroupRepository = new GenericRepository<ProgramGroup>(_dbContext);
+                }
+                return _programGroupRepository;
             }
         }
 

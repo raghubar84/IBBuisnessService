@@ -7,7 +7,6 @@
   <ItemGroup>
     <Folder Include="Mapping\" />
     <Folder Include="Validators\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,10 +18,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IBBusinessService.Data\IBBusinessService.Data.csproj" />
     <ProjectReference Include="..\IBBusinessService.Services\IBBusinessService.Services.csproj" />
   </ItemGroup>
 

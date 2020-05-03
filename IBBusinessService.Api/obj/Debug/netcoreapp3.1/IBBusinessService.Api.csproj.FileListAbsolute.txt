@@ -18,6 +18,9 @@ D:\Projects\IBBusinessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\stat
 D:\Projects\IBBusinessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.dll
 D:\Projects\IBBusinessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.pdb
 D:\Projects\IBBusinessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.genruntimeconfig.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csprojAssemblyReference.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.AssemblyInfoInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.AssemblyInfo.cs
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -41,7 +44,6 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -154,14 +156,11 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runt
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.dll
-D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.pdb
-D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csprojAssemblyReference.cache
-D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CoreCompileInputs.cache
-D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cache
-D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.AssemblyInfoInputs.cache
-D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.AssemblyInfo.cs
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.RazorTargetAssemblyInfo.cache
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CopyComplete
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\staticwebassets\IBBusinessService.Api.StaticWebAssets.Manifest.cache
@@ -169,3 +168,10 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\stat
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.genruntimeconfig.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CoreCompileInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cache
