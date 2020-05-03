@@ -33,7 +33,7 @@ namespace IBBusinessService.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgramMaster>>> Get()
         {
-            _logger.LogInformation($"ProgramMasterApi GetAll Method entered.");
+            _logger.LogInformation($"ProgramMasterApi GetAll Method enter.");
             List<ProgramMaster> listProgramMasters = new List<ProgramMaster>();
             try
             {
