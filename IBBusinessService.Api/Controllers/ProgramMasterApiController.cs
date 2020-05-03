@@ -11,6 +11,7 @@ using IBBusinessService.Services;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
 using IBBusinessService.Api.Filters;
+using Microsoft.Extensions.Logging;
 
 namespace IBBusinessService.Api.Controllers
 {
@@ -18,12 +19,13 @@ namespace IBBusinessService.Api.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ProgramMasterApiController : ControllerBase
-    {       
-
+    {
+        private readonly ILogger<ProgramMasterApiController> _logger;
         private IProgramMasterService _programMasterService;
-        public ProgramMasterApiController(IBBusinessContext context)
+        public ProgramMasterApiController(IBBusinessContext context, ILogger<ProgramMasterApiController> logger)
         {
             _programMasterService = new ProgramMasterService(context);
+            _logger = logger;
         }
 
 
@@ -31,7 +33,18 @@ namespace IBBusinessService.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgramMaster>>> Get()
         {
-            return await _programMasterService.GetAll();
+            _logger.LogInformation($"ProgramMasterApi GetAll Method entered.");
+            List<ProgramMaster> listProgramMasters = new List<ProgramMaster>();
+            try
+            {
+                listProgramMasters = await _programMasterService.GetAll();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+            }
+            _logger.LogInformation($"ProgramMasterApi GetAll Method exit.");
+            return listProgramMasters;
         }
 
         // GET: api/ProgramMasterApi/5
