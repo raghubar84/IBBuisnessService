@@ -10,11 +10,7 @@ namespace IBBusinessService.Services
 {
     public class ProgramMasterService: IProgramMasterService
     {
-        private UnitOfWork _unitOfWork;
-        public ProgramMasterService(IBBusinessContext context)
-        {
-            _unitOfWork = new UnitOfWork(context);
-        }        
+        private UnitOfWork _unitOfWork = new UnitOfWork();                
 
         public async Task<List<ProgramMaster>> GetAll()
         {

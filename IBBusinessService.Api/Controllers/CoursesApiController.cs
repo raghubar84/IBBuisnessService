@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using IBBusinessService.Data;
 using IBBusinessService.Domain.Models;
+using IBBusinessService.Domain.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using IBBusinessService.Api.Resources;
 
 namespace IBBusinessService.Api.Controllers
 {
@@ -14,97 +19,129 @@ namespace IBBusinessService.Api.Controllers
     [ApiController]
     public class CoursesApiController : ControllerBase
     {
-        private readonly IBBusinessContext _context;
+        private readonly ICourseService _courseService;
+        private readonly ILogger<CoursesApiController> _logger;
 
-        public CoursesApiController(IBBusinessContext context)
+        public CoursesApiController(ICourseService courseService, ILogger<CoursesApiController> logger)
         {
-            _context = context;
+            _courseService = courseService;
+            _logger = logger;
         }
 
         // GET: api/CoursesApi
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Course>>> GetCourse()
+        public async Task<ActionResult> GetCourse()
         {
-            return await _context.Course.ToListAsync();
+            _logger.LogInformation("CoursesApi GetAll Method enter.");
+            ObjectResult response;
+            try
+            {                 
+                var data = await _courseService.GetAll();
+                response = Ok(data);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                response = BadRequest("An error occured while processing request.");
+            }
+            _logger.LogInformation("CoursesApi GetAll Method exit.");
+            return response;
         }
 
         // GET: api/CoursesApi/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Course>> GetCourse(int id)
+        public async Task<ActionResult> GetCourse(int id)
         {
-            var course = await _context.Course.FindAsync(id);
-
-            if (course == null)
-            {
-                return NotFound();
-            }
-
-            return course;
-        }
-
-        // PUT: api/CoursesApi/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCourse(int id, Course course)
-        {
-            if (id != course.CourseId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(course).State = EntityState.Modified;
-
+            _logger.LogInformation("CoursesApi GetCourse Method enter.");
+            ObjectResult response;
             try
             {
-                await _context.SaveChangesAsync();
+                var data = await _courseService.GetDetails(id);
+                response = Ok(data);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!CourseExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                _logger.LogError(ex, ex.Message);
+                response = BadRequest("An error occured while processing request.");
             }
-
-            return NoContent();
+            _logger.LogInformation("CoursesApi GetCourse Method exit.");
+            return response;
         }
 
-        // POST: api/CoursesApi
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Course>> PostCourse(Course course)
+        // PUT: api/CoursesApi/5        
+        [HttpPut("{id}")]
+        public async Task<ActionResult> PutCourse(int id, Course course)
         {
-            _context.Course.Add(course);
-            await _context.SaveChangesAsync();
+            _logger.LogInformation("CoursesApi PutCourse Method enter.");
+            ObjectResult response;
+            if (id != course.CourseId)
+                response = BadRequest("Not valid data.");
+            else
+            {
+                try
+                {
+                    await _courseService.Put(id, course);
+                    response = Ok("Data updated successfuly.");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, ex.Message);
+                    response = BadRequest("An error occured while processing request.");
+                }
+            }
+            _logger.LogInformation("CoursesApi PutCourse Method exit.");
+            return response;            
+        }
 
-            return CreatedAtAction("GetCourse", new { id = course.CourseId }, course);
+        // POST: api/CoursesApi        
+        [HttpPost]
+        public async Task<ActionResult> PostCourse(Course course)
+        {
+            _logger.LogInformation("CoursesApi PostCourse Method enter.");
+            ObjectResult response;
+            if (course == null)
+                response = BadRequest("Model is empty.");
+            else
+            {
+                try
+                {
+                    await _courseService.Post(course);
+                    response = Ok("Data inserted successfuly.");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, ex.Message);
+                    response = BadRequest("An error occured while processing request.");
+                }
+            }
+            _logger.LogInformation("CoursesApi PostCourse Method exit.");
+            return response;            
         }
 
         // DELETE: api/CoursesApi/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Course>> DeleteCourse(int id)
+        public async Task<ActionResult> DeleteCourse(int id)
         {
-            var course = await _context.Course.FindAsync(id);
-            if (course == null)
+            _logger.LogInformation("CoursesApi DeleteCourse Method enter.");
+            ObjectResult response;           
+            try
             {
-                return NotFound();
+                var status = await _courseService.Delete(id);
+                if (status == true)
+                    response = NotFound("Course not found.");
+                else
+                    response = Ok("Data deleted successfuly.");
+
             }
-
-            _context.Course.Remove(course);
-            await _context.SaveChangesAsync();
-
-            return course;
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                response = BadRequest("An error occured while processing request.");
+            }
+            
+            _logger.LogInformation("CoursesApi DeleteCourse Method exit.");
+            return response;            
         }
-
-        private bool CourseExists(int id)
-        {
-            return _context.Course.Any(e => e.CourseId == id);
-        }
+       
     }
 }

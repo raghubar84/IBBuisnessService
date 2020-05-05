@@ -8,15 +8,12 @@ namespace IBBusinessService.Data
 {
     public class UnitOfWork : IDisposable
     {
-        private IBBusinessContext _dbContext ;       
+        private IBBusinessContext _dbContext = new IBBusinessContext();       
         private GenericRepository<ProgramMaster> _programMasterRepository;
         private GenericRepository<ProgramGroup> _programGroupRepository;
         private GenericRepository<Course> _courseRepository;
-
-        public UnitOfWork(IBBusinessContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
+        private GenericRepository<School> _schoolRepository;
+        private GenericRepository<Student> _studentRepository;
 
         public GenericRepository<ProgramMaster> ProgramMasterRepository
         {
@@ -51,6 +48,30 @@ namespace IBBusinessService.Data
                     this._courseRepository = new GenericRepository<Course>(_dbContext);
                 }
                 return _courseRepository;
+            }
+        }
+
+        public GenericRepository<School> SchoolRepository
+        {
+            get
+            {
+                if (this._schoolRepository == null)
+                {
+                    this._schoolRepository = new GenericRepository<School>(_dbContext);
+                }
+                return _schoolRepository;
+            }
+        }
+
+        public GenericRepository<Student> StudentRepository
+        {
+            get
+            {
+                if (this._studentRepository == null)
+                {
+                    this._studentRepository = new GenericRepository<Student>(_dbContext);
+                }
+                return _studentRepository;
             }
         }
 

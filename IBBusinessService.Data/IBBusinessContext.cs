@@ -2,6 +2,7 @@
 using IBBusinessService.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 
 namespace IBBusinessService.Data
 {
@@ -30,7 +31,11 @@ namespace IBBusinessService.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("name=IBBusinessConnectionString");
+                var builder = new ConfigurationBuilder().SetBasePath(System.IO.Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
+                var configuration = builder.Build();
+                var connectionString = configuration.GetConnectionString("IBBusinessConnectionString");
+                optionsBuilder.UseSqlServer(connectionString);
+                //optionsBuilder.UseSqlServer("IBBusinessConnectionString");
             }
         }
 

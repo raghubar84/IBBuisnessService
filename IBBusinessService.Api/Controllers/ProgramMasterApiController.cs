@@ -22,9 +22,9 @@ namespace IBBusinessService.Api.Controllers
     {
         private readonly ILogger<ProgramMasterApiController> _logger;
         private IProgramMasterService _programMasterService;
-        public ProgramMasterApiController(IBBusinessContext context, ILogger<ProgramMasterApiController> logger)
+        public ProgramMasterApiController(IProgramMasterService programMasterService, ILogger<ProgramMasterApiController> logger)
         {
-            _programMasterService = new ProgramMasterService(context);
+            _programMasterService = programMasterService;
             _logger = logger;
         }
 
@@ -33,7 +33,7 @@ namespace IBBusinessService.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgramMaster>>> Get()
         {
-            _logger.LogInformation($"ProgramMasterApi GetAll Method enter.");
+            _logger.LogInformation("ProgramMasterApi GetAll Method enter.");
             List<ProgramMaster> listProgramMasters = new List<ProgramMaster>();
             try
             {
@@ -43,7 +43,7 @@ namespace IBBusinessService.Api.Controllers
             {
                 _logger.LogError(ex, ex.Message);
             }
-            _logger.LogInformation($"ProgramMasterApi GetAll Method exit.");
+            _logger.LogInformation("ProgramMasterApi GetAll Method exit.");
             return listProgramMasters;
         }
 

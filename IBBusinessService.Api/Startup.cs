@@ -38,6 +38,10 @@ namespace IBBusinessService.Api
             //Entity Framework  
             services.AddDbContext<IBBusinessContext>(options => options.UseSqlServer(ConnectionString));
 
+            services.Add(new ServiceDescriptor(typeof(IProgramMasterService), new ProgramMasterService()));
+            services.Add(new ServiceDescriptor(typeof(ICourseService), new CourseService()));
+            services.Add(new ServiceDescriptor(typeof(IStudentService), new StudentService()));
+
             //Swagger Defination
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info
