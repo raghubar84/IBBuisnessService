@@ -1,9 +1,0 @@
-D:\Projects\IBBusinessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.deps.json
-D:\Projects\IBBusinessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.dll
-D:\Projects\IBBusinessService\IBBusinessService.Services\bin\Debug\netstandard2.0\IBBusinessService.Services.pdb
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.csprojAssemblyReference.cache
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.csproj.CoreCompileInputs.cache
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.AssemblyInfoInputs.cache
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.AssemblyInfo.cs
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.dll
-D:\Projects\IBBusinessService\IBBusinessService.Services\obj\Debug\netstandard2.0\IBBusinessService.Services.pdb

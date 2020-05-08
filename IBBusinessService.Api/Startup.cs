@@ -10,6 +10,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using IBBusinessService.Data;
+using IBBusinessService.Domain.Services;
+using IBBusinessService.Services;
+using IBBusinessService.Api.Resources;
+using IBBusinessService.Domain;
+using AutoMapper;
 
 namespace IBBusinessService.Api
 {
@@ -26,6 +33,42 @@ namespace IBBusinessService.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Fetching Connection string from APPSETTINGS.JSON  
+            var ConnectionString = Configuration.GetConnectionString("IBBusinessConnectionString");
+
+            //Entity Framework  
+            services.AddDbContext<IBBusinessContext>(options => options.UseSqlServer(ConnectionString));
+                                 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IProgramService, ProgramService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRoleMappingService, UserRoleMappingService>();
+
+            //AutoMapper
+            services.AddAutoMapper(typeof(Startup));
+
+            //Swagger Defination
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "IBBuisinessService API",
+                    Description = "IBBuisinessService Core 3.1 Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                    {
+                        Name = "Raghubar Gupta",
+                        Email = "raghubar.in@gmail.com",
+                        Url = "https://raghubarsites.in/"
+                    }
+                });
+            });
+
+            //Application-Insights-Log
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +88,13 @@ namespace IBBusinessService.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            //Swagger Defination
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
         }
     }

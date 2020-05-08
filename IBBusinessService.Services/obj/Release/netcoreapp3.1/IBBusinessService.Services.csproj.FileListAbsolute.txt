@@ -1,0 +1,14 @@
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Services.deps.json
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Services.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Data.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Domain.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Data.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Services\bin\Release\netcoreapp3.1\IBBusinessService.Domain.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.csprojAssemblyReference.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.csproj.CoreCompileInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.AssemblyInfoInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.AssemblyInfo.cs
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.csproj.CopyComplete
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Release\netcoreapp3.1\IBBusinessService.Services.pdb
