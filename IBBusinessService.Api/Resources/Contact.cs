@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace IBBusinessService.Api.Resources
+﻿namespace IBBusinessService.Api.Resources
 {
     internal class Contact
     {

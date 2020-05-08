@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using IBBusinessService.Domain.Repositories;
+using System.Threading.Tasks;
 
 namespace IBBusinessService.Domain
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
+        ICourseRepository CourseRepository { get; }
+        IProgramRepository ProgramRepository { get; }
+        Task Save();
     }
 }

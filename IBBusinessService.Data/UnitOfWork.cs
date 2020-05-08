@@ -1,103 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
 using IBBusinessService.Data.Repositories;
-using IBBusinessService.Domain.Models;
+using IBBusinessService.Domain;
+using IBBusinessService.Domain.Repositories;
 
 namespace IBBusinessService.Data
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
-        private IBBusinessContext _dbContext = new IBBusinessContext();       
-        private GenericRepository<ProgramMaster> _programMasterRepository;
-        private GenericRepository<ProgramGroup> _programGroupRepository;
-        private GenericRepository<Course> _courseRepository;
-        private GenericRepository<School> _schoolRepository;
-        private GenericRepository<Student> _studentRepository;
+        private IBBusinessContext _dbContext;
+        private ICourseRepository _courseRepository;
+        private IProgramRepository _programRepository;
 
-        public GenericRepository<ProgramMaster> ProgramMasterRepository
+        public ICourseRepository CourseRepository
         {
             get
             {
-                if (this._programMasterRepository == null)
+                if (_courseRepository == null)
                 {
-                    this._programMasterRepository = new GenericRepository<ProgramMaster>(_dbContext);
+                    _courseRepository = new CourseRepository(_dbContext);
                 }
-                return _programMasterRepository;
-            }
-        }
 
-        public GenericRepository<ProgramGroup> ProgramGroupRepository
-        {
-            get
-            {
-                if (this._programGroupRepository == null)
-                {
-                    this._programGroupRepository = new GenericRepository<ProgramGroup>(_dbContext);
-                }
-                return _programGroupRepository;
-            }
-        }
-
-        public GenericRepository<Course> CourseRepository
-        {
-            get
-            {
-                if (this._courseRepository == null)
-                {
-                    this._courseRepository = new GenericRepository<Course>(_dbContext);
-                }
                 return _courseRepository;
             }
         }
 
-        public GenericRepository<School> SchoolRepository
+        public IProgramRepository ProgramRepository
         {
             get
             {
-                if (this._schoolRepository == null)
+                if (_programRepository == null)
                 {
-                    this._schoolRepository = new GenericRepository<School>(_dbContext);
+                    _programRepository = new ProgramRepository(_dbContext);
                 }
-                return _schoolRepository;
+
+                return _programRepository;
             }
         }
 
-        public GenericRepository<Student> StudentRepository
+        public UnitOfWork(IBBusinessContext dbContext)
         {
-            get
-            {
-                if (this._studentRepository == null)
-                {
-                    this._studentRepository = new GenericRepository<Student>(_dbContext);
-                }
-                return _studentRepository;
-            }
+            _dbContext = dbContext;
         }
 
-        public void Save()
+        public async Task Save()
         {
-            _dbContext.SaveChanges();
-        }
-
-        private bool disposed = false;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    _dbContext.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

@@ -1,145 +1,172 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using IBBusinessService.Data;
+using AutoMapper;
+using IBBusinessService.Api.Mapping;
+using IBBusinessService.Api.Resources;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using IBBusinessService.Api.Resources;
 
 namespace IBBusinessService.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class CoursesApiController : ControllerBase
     {
         private readonly ICourseService _courseService;
         private readonly ILogger<CoursesApiController> _logger;
+        private readonly IMapper _mapper;
 
-        public CoursesApiController(ICourseService courseService, ILogger<CoursesApiController> logger)
+        public CoursesApiController(ICourseService courseService, ILogger<CoursesApiController> logger, IMapper mapper)
         {
             _courseService = courseService;
             _logger = logger;
+            _mapper = mapper;
         }
 
+        /// <summary>
+        /// To get all course list
+        /// </summary>
+        /// <returns>list of course</returns>
         // GET: api/CoursesApi
         [HttpGet]
         public async Task<ActionResult> GetCourse()
         {
-            _logger.LogInformation("CoursesApi GetAll Method enter.");
+            _logger.LogInformation(ConstantVarriables.CourseApiGetAllEnterMessage);
             ObjectResult response;
             try
             {                 
-                var data = await _courseService.GetAll();
-                response = Ok(data);
+                var data = await _courseService.GetAllCourses();
+                var dataResult = _mapper.Map<IEnumerable<CourseDto>>(data);
+                response = Ok(dataResult);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                response = BadRequest("An error occured while processing request.");
+                response = BadRequest(ConstantVarriables.GenericExeptionMessage);
             }
-            _logger.LogInformation("CoursesApi GetAll Method exit.");
+            _logger.LogInformation(ConstantVarriables.CourseApiGetAllExitMessage);
             return response;
         }
 
+        /// <summary>
+        /// To get course details
+        /// </summary>
+        /// <param name="id">CourseId</param>
+        /// <returns>http response</returns>
         // GET: api/CoursesApi/5
         [HttpGet("{id}")]
         public async Task<ActionResult> GetCourse(int id)
         {
-            _logger.LogInformation("CoursesApi GetCourse Method enter.");
+            _logger.LogInformation(ConstantVarriables.CourseApiGetCourseEnterMessage);
             ObjectResult response;
             try
             {
-                var data = await _courseService.GetDetails(id);
+                var data = await _courseService.GetCourseById(id);
+                var dataResult = _mapper.Map<CourseDto>(data); 
                 response = Ok(data);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                response = BadRequest("An error occured while processing request.");
+                response = BadRequest(ConstantVarriables.GenericExeptionMessage);
             }
-            _logger.LogInformation("CoursesApi GetCourse Method exit.");
+            _logger.LogInformation(ConstantVarriables.CourseApiGetCourseExitMessage);
             return response;
         }
 
+        /// <summary>
+        /// To update course data
+        /// </summary>
+        /// <param name="id">CourseId</param>
+        /// <param name="course">course data</param>
+        /// <returns>http response</returns>
         // PUT: api/CoursesApi/5        
         [HttpPut("{id}")]
-        public async Task<ActionResult> PutCourse(int id, Course course)
+        public async Task<ActionResult> PutCourse(int id, CourseUpdateDto course)
         {
-            _logger.LogInformation("CoursesApi PutCourse Method enter.");
+            _logger.LogInformation(ConstantVarriables.CourseApiPutCourseEnterMessage);
             ObjectResult response;
             if (id != course.CourseId)
-                response = BadRequest("Not valid data.");
+                response = BadRequest(ConstantVarriables.NoValidData);
             else
             {
                 try
                 {
-                    await _courseService.Put(id, course);
-                    response = Ok("Data updated successfuly.");
+                    var courseEntity = _mapper.Map<Course>(course);
+                    await _courseService.UpdateCourse(id, courseEntity);
+                    response = Ok(ConstantVarriables.DataUpdated);
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, ex.Message);
-                    response = BadRequest("An error occured while processing request.");
+                    response = BadRequest(ConstantVarriables.GenericExeptionMessage);
                 }
             }
-            _logger.LogInformation("CoursesApi PutCourse Method exit.");
+            _logger.LogInformation(ConstantVarriables.CourseApiPutCourseExitMessage);
             return response;            
         }
 
+        /// <summary>
+        /// To create course
+        /// </summary>
+        /// <param name="course">course data</param>
+        /// <returns>http response</returns>
         // POST: api/CoursesApi        
         [HttpPost]
-        public async Task<ActionResult> PostCourse(Course course)
+        public async Task<ActionResult> PostCourse(CourseCreationDto course)
         {
-            _logger.LogInformation("CoursesApi PostCourse Method enter.");
+            _logger.LogInformation(ConstantVarriables.CourseApiPostCourseEnterMessage);
             ObjectResult response;
             if (course == null)
-                response = BadRequest("Model is empty.");
+                response = BadRequest(ConstantVarriables.ModelEmpty);
             else
             {
                 try
                 {
-                    await _courseService.Post(course);
-                    response = Ok("Data inserted successfuly.");
+                    var courseEntity = _mapper.Map<Course>(course);
+                    await _courseService.CreateCourse(courseEntity);
+                    response = Ok(ConstantVarriables.DataSaved);
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, ex.Message);
-                    response = BadRequest("An error occured while processing request.");
+                    response = BadRequest(ConstantVarriables.GenericExeptionMessage);
                 }
             }
-            _logger.LogInformation("CoursesApi PostCourse Method exit.");
+            _logger.LogInformation(ConstantVarriables.CourseApiPostCourseExitMessage);
             return response;            
         }
 
+        /// <summary>
+        /// To delete course
+        /// </summary>
+        /// <param name="id">CourseId</param>
+        /// <returns>http response</returns>
         // DELETE: api/CoursesApi/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteCourse(int id)
         {
-            _logger.LogInformation("CoursesApi DeleteCourse Method enter.");
+            _logger.LogInformation(ConstantVarriables.CourseApiDeleteCourseEnterMessage);
             ObjectResult response;           
             try
             {
-                var status = await _courseService.Delete(id);
+                var status = await _courseService.DeleteCourse(id);
                 if (status == true)
-                    response = NotFound("Course not found.");
+                    response = NotFound(ConstantVarriables.CourseNotFound);
                 else
-                    response = Ok("Data deleted successfuly.");
+                    response = Ok(ConstantVarriables.DataDeleted);
 
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                response = BadRequest("An error occured while processing request.");
+                response = BadRequest(ConstantVarriables.GenericExeptionMessage);
             }
             
-            _logger.LogInformation("CoursesApi DeleteCourse Method exit.");
+            _logger.LogInformation(ConstantVarriables.CourseApiDeleteCourseExitMessage);
             return response;            
         }
        

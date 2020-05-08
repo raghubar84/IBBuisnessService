@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace IBBusinessService.Domain.Services
+namespace IBBusinessService.Domain.Repositories
 {
     /// <summary>
-    /// Interface class for Course Service
+    /// Interface class for course repository
     /// </summary>
-    public interface ICourseService
+    public interface ICourseRepository : IRepositoryBase<Course>
     {
         /// <summary>
         /// To get all course list
@@ -20,24 +20,24 @@ namespace IBBusinessService.Domain.Services
         /// </summary>
         /// <param name="id">needs to pass course id</param>
         /// <returns>Course Details </returns>
-        Task<Course> GetCourseById(int id);
-
+        Task<Course> GetCourseById(int id);     
+        
         /// <summary>
         /// To save course
         /// </summary>
         /// <param name="entity">Excpect course data</param>
-        Task<Course> CreateCourse(Course entity);
+        void CreateCourse(Course entity);
 
         /// <summary>
         /// To update course data
         /// </summary>
         /// <param name="entity">Excpect course data</param>
-        Task<Course> UpdateCourse(int id, Course entity);
+        void UpdateCourse(Course entity);
 
         /// <summary>
         /// To delete course data
         /// </summary>
         /// <param name="entity">Excpect course data</param>
-        Task<bool> DeleteCourse(int id);
+        void DeleteCourse(Course entity);
     }
 }

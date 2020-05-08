@@ -1,50 +1,76 @@
-﻿using IBBusinessService.Data;
+﻿using IBBusinessService.Domain;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IBBusinessService.Services
 {
+    /// <summary>
+    /// Implementaion class for course service
+    /// </summary>
     public class CourseService : ICourseService
     {
-        private UnitOfWork _unitOfWork = new UnitOfWork();
-        public async Task<List<Course>> GetAll()
-        {            
-            return _unitOfWork.CourseRepository.Get().ToList();
+        private IUnitOfWork _unitOfWork;
+        public CourseService(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
         }
 
-        public async Task<Course> GetDetails(int id)
+        /// <summary>
+        /// To get all course list
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<Course>> GetAllCourses()
         {
-            return _unitOfWork.CourseRepository.GetByID(id);
+            return await _unitOfWork.CourseRepository.GetAllCourses();
         }
 
-        public async Task<Course> Post(Course entity)
+        /// <summary>
+        /// To get course details
+        /// </summary>
+        /// <param name="id">needs to pass course id</param>
+        /// <returns>Course Details </returns>
+        public async Task<Course> GetCourseById(int id)
         {
-            _unitOfWork.CourseRepository.Insert(entity);
-            _unitOfWork.Save();
-            return await GetDetails(entity.CourseId);
+            return await _unitOfWork.CourseRepository.GetCourseById(id);
         }
 
-        public async Task<Course> Put(int id, Course entity)
+        /// <summary>
+        /// To save course
+        /// </summary>
+        /// <param name="entity">Excpect course data</param>
+        public async Task<Course> CreateCourse(Course entity)
         {
-            _unitOfWork.CourseRepository.Update(entity);
-            _unitOfWork.Save();
-            return await GetDetails(id);
+            _unitOfWork.CourseRepository.CreateCourse(entity);
+            await _unitOfWork.Save();
+            return await GetCourseById(entity.CourseId);
         }
 
-        public async Task<bool> Delete(int id)
+        /// <summary>
+        /// To update course data
+        /// </summary>
+        /// <param name="entity">Excpect course data</param>
+        public async Task<Course> UpdateCourse(int id, Course entity)
         {
-            Course entity = _unitOfWork.CourseRepository.GetByID(id);
+            _unitOfWork.CourseRepository.UpdateCourse(entity);
+            await _unitOfWork.Save();
+            return await GetCourseById(id);
+        }
+
+        /// <summary>
+        /// To delete course data
+        /// </summary>
+        /// <param name="entity">Excpect course data</param>
+        public async Task<bool> DeleteCourse(int id)
+        {
+            Course entity = await _unitOfWork.CourseRepository.GetCourseById(id);
             if (entity == null)
             {
                 return false;
             }
-            _unitOfWork.CourseRepository.Delete(id);
-            _unitOfWork.Save();
+            _unitOfWork.CourseRepository.DeleteCourse(entity);
+            await _unitOfWork.Save();
             return true;
         }
     }

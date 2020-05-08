@@ -15,6 +15,8 @@ using IBBusinessService.Data;
 using IBBusinessService.Domain.Services;
 using IBBusinessService.Services;
 using IBBusinessService.Api.Resources;
+using IBBusinessService.Domain;
+using AutoMapper;
 
 namespace IBBusinessService.Api
 {
@@ -25,25 +27,29 @@ namespace IBBusinessService.Api
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }        
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {            
-            services.AddControllers();                       
+        {
+            services.AddControllers();
 
             //Fetching Connection string from APPSETTINGS.JSON  
             var ConnectionString = Configuration.GetConnectionString("IBBusinessConnectionString");
 
             //Entity Framework  
             services.AddDbContext<IBBusinessContext>(options => options.UseSqlServer(ConnectionString));
+                                 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IProgramService, ProgramService>();
 
-            services.Add(new ServiceDescriptor(typeof(IProgramMasterService), new ProgramMasterService()));
-            services.Add(new ServiceDescriptor(typeof(ICourseService), new CourseService()));
-            services.Add(new ServiceDescriptor(typeof(IStudentService), new StudentService()));
+            //AutoMapper
+            services.AddAutoMapper(typeof(Startup));
 
             //Swagger Defination
-            services.AddSwaggerGen(c => {
+            services.AddSwaggerGen(c =>
+            {
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
@@ -84,7 +90,8 @@ namespace IBBusinessService.Api
 
             //Swagger Defination
             app.UseSwagger();
-            app.UseSwaggerUI(c => {
+            app.UseSwaggerUI(c =>
+            {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
         }
