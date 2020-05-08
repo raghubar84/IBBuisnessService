@@ -7,6 +7,8 @@ namespace IBBusinessService.Domain
     {
         ICourseRepository CourseRepository { get; }
         IProgramRepository ProgramRepository { get; }
+        IUserRepository UserRepository { get; }
+        IUserRoleMappingRepository UserRoleMappingRepository { get; }
         Task Save();
     }
 }

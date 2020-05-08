@@ -12,7 +12,7 @@ using IBBusinessService.Api.Resources;
 
 namespace IBBusinessService.Api.Controllers
 {
-    //[CustomAuthorization]
+    [CustomAuthorization]
     [Route("api/v1/[controller]")]
     [ApiController]
     public class ProgramApiController : ControllerBase
@@ -44,7 +44,7 @@ namespace IBBusinessService.Api.Controllers
                 var dataResult = _mapper.Map<IEnumerable<ProgramDto>>(data);
                 response = Ok(dataResult);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
                 response = BadRequest(ConstantVarriables.GenericExeptionMessage);
@@ -59,7 +59,7 @@ namespace IBBusinessService.Api.Controllers
         /// <param name="id">ProgramId</param>
         /// <returns>Prgram Details</returns>
         // GET: api/ProgramApi/5
-        [HttpGet("{id}", Name = "Get")]        
+        [HttpGet("{id}", Name = "Get")]
         public async Task<ActionResult> GetProgram(int id)
         {
             _logger.LogInformation(ConstantVarriables.ProgramApiGetProgramEnterMessage);
@@ -85,11 +85,11 @@ namespace IBBusinessService.Api.Controllers
         /// <param name="program">program data</param>
         /// <returns>http response</returns>
         // POST: api/ProgramApi
-        [HttpPost]        
+        [HttpPost]
         public async Task<ActionResult> Post([FromBody]ProgramCreationDto program)
         {
             _logger.LogInformation(ConstantVarriables.ProgramApiPostProgramEnterMessage);
-            ObjectResult response;            
+            ObjectResult response;
             try
             {
                 var programEntity = _mapper.Map<ProgramMaster>(program);
@@ -101,7 +101,7 @@ namespace IBBusinessService.Api.Controllers
                 _logger.LogError(ex, ex.Message);
                 response = BadRequest(ConstantVarriables.GenericExeptionMessage);
             }
-            
+
             _logger.LogInformation(ConstantVarriables.ProgramApiPostProgramExitMessage);
             return response;
         }
@@ -153,10 +153,9 @@ namespace IBBusinessService.Api.Controllers
             {
                 var status = await _programService.DeleteProgram(id);
                 if (status == true)
-                    response = NotFound(ConstantVarriables.ProgramNotFound);
-                else
                     response = Ok(ConstantVarriables.DataDeleted);
-
+                else
+                    response = NotFound(ConstantVarriables.ProgramNotFound);
             }
             catch (Exception ex)
             {

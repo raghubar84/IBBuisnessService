@@ -10,6 +10,8 @@ namespace IBBusinessService.Data
         private IBBusinessContext _dbContext;
         private ICourseRepository _courseRepository;
         private IProgramRepository _programRepository;
+        private IUserRepository _userRepository;
+        private IUserRoleMappingRepository _userRoleMappingRepository;
 
         public ICourseRepository CourseRepository
         {
@@ -34,6 +36,32 @@ namespace IBBusinessService.Data
                 }
 
                 return _programRepository;
+            }
+        }
+
+        public IUserRepository UserRepository
+        {
+            get
+            {
+                if (_userRepository == null)
+                {
+                    _userRepository = new UserRepository(_dbContext);
+                }
+
+                return _userRepository;
+            }
+        }
+
+        public IUserRoleMappingRepository UserRoleMappingRepository
+        {
+            get
+            {
+                if (_userRoleMappingRepository == null)
+                {
+                    _userRoleMappingRepository = new UserRoleMappingRepository(_dbContext);
+                }
+
+                return _userRoleMappingRepository;
             }
         }
 

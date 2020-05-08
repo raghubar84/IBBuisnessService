@@ -43,6 +43,8 @@ namespace IBBusinessService.Api
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICourseService, CourseService>();
             services.AddScoped<IProgramService, ProgramService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRoleMappingService, UserRoleMappingService>();
 
             //AutoMapper
             services.AddAutoMapper(typeof(Startup));

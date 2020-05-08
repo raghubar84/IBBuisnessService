@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200508064613_UserRoleMappingAdded.cs" />
+    <Compile Remove="Migrations\20200508064613_UserRoleMappingAdded.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
   <ItemGroup>

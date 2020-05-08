@@ -26,6 +26,8 @@ namespace IBBusinessService.Data
         public virtual DbSet<School> School { get; set; }
         public virtual DbSet<Stream> Stream { get; set; }
         public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<UserMaster> UserMaster { get; set; }
+        public virtual DbSet<UserRoleMapping> UserRoleMapping { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

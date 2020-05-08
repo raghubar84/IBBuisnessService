@@ -23,7 +23,7 @@ namespace IBBusinessService.Data.Repositories
         /// <returns></returns>
         public async Task<IEnumerable<Course>> GetAllCourses()
         {
-            return await FindAll().OrderBy(c => c.CourseName).ToListAsync();
+            return await FindAll().ToListAsync();
         }
 
         /// <summary>
