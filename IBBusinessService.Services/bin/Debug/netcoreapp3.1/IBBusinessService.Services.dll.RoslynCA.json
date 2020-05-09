@@ -12,18 +12,18 @@
       },
       "results": [
         {
-          "ruleId": "CS1998",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "message": "Make '_unitOfWork' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramGroupService.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramService.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 47,
-                  "endLine": 12,
-                  "endColumn": 53
+                  "startLine": 14,
+                  "startColumn": 29,
+                  "endLine": 14,
+                  "endColumn": 40
                 }
               }
             }
@@ -33,123 +33,18 @@
           }
         },
         {
-          "ruleId": "CS1998",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "message": "Make '_unitOfWork' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserService.cs",
                 "region": {
-                  "startLine": 15,
-                  "startColumn": 41,
-                  "endLine": 15,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 35,
-                  "endLine": 20,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramMasterService.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 48,
-                  "endLine": 15,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramMasterService.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 42,
-                  "endLine": 20,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 33,
-                  "endLine": 39,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramMasterService.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 33,
-                  "endLine": 39,
-                  "endColumn": 39
+                  "startLine": 16,
+                  "startColumn": 29,
+                  "endLine": 16,
+                  "endColumn": 40
                 }
               }
             }
@@ -165,7 +60,28 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserRoleMappingService.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserService.cs",
                 "region": {
                   "startLine": 4,
                   "startColumn": 1,
@@ -186,11 +102,32 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserService.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 5,
                   "startColumn": 1,
-                  "endLine": 7,
+                  "endLine": 5,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserService.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
                   "endColumn": 19
                 }
               }
@@ -207,33 +144,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramMasterService.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/UserRoleMappingService.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 28,
-                  "endLine": 13,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramGroupService.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
+                  "startLine": 17,
+                  "startColumn": 29,
+                  "endLine": 17,
+                  "endColumn": 40
                 }
               }
             }
@@ -252,135 +168,9 @@
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/CourseService.cs",
                 "region": {
                   "startLine": 14,
-                  "startColumn": 28,
+                  "startColumn": 29,
                   "endLine": 14,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_studentRepository' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/StudentService.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 35,
-                  "endLine": 15,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/ProgramMasterService.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/StudentService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/StudentService.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/StudentService.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Services/StudentService.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 19
+                  "endColumn": 40
                 }
               }
             }
@@ -391,19 +181,6 @@
         }
       ],
       "rules": {
-        "CS1998": {
-          "id": "CS1998",
-          "shortDescription": "Async method lacks 'await' operators and will run synchronously",
-          "defaultLevel": "warning",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
         "S1128": {
           "id": "S1128",
           "shortDescription": "Unused \"using\" should be removed",

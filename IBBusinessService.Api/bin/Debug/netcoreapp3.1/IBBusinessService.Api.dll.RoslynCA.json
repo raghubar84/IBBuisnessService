@@ -20,9 +20,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
                 "region": {
-                  "startLine": 11,
+                  "startLine": 7,
                   "startColumn": 23,
-                  "endLine": 11,
+                  "endLine": 7,
                   "endColumn": 30
                 }
               }
@@ -41,9 +41,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
                 "region": {
-                  "startLine": 12,
+                  "startLine": 8,
                   "startColumn": 23,
-                  "endLine": 12,
+                  "endLine": 8,
                   "endColumn": 28
                 }
               }
@@ -62,9 +62,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
                 "region": {
-                  "startLine": 13,
+                  "startLine": 9,
                   "startColumn": 23,
-                  "endLine": 13,
+                  "endLine": 9,
                   "endColumn": 34
                 }
               }
@@ -83,9 +83,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 10,
                   "startColumn": 23,
-                  "endLine": 14,
+                  "endLine": 10,
                   "endColumn": 37
                 }
               }
@@ -104,9 +104,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
                 "region": {
-                  "startLine": 15,
+                  "startLine": 11,
                   "startColumn": 23,
-                  "endLine": 15,
+                  "endLine": 11,
                   "endColumn": 30
                 }
               }
@@ -123,306 +123,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
                 "region": {
                   "startLine": 4,
                   "startColumn": 1,
                   "endLine": 4,
-                  "endColumn": 18
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 1,
-                  "endLine": 12,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 1,
-                  "endLine": 14,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 1,
-                  "endLine": 6,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/StudentApiController.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/StudentApiController.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 1,
-                  "endLine": 6,
-                  "endColumn": 33
+                  "endColumn": 38
                 }
               }
             }
@@ -439,6 +145,321 @@
             {
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 12,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/CourseUpdateDto.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/CourseUpdateDto.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/CourseUpdateDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/CourseUpdateDto.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/MappingProfile.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/MappingProfile.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/MappingProfile.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/MappingProfile.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramDto.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramDto.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramUpdateDto.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramUpdateDto.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramUpdateDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Mapping/ProgramUpdateDto.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 1,
@@ -585,159 +606,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Contact.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Contact.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Startup.cs",
                 "region": {
                   "startLine": 2,
                   "startColumn": 1,
                   "endLine": 2,
                   "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Contact.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Contact.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Resources/Info.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 30
                 }
               }
             }
@@ -852,6 +726,27 @@
           }
         },
         {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Attribute'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 18,
+                  "endLine": 20,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1118",
           "level": "warning",
           "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
@@ -873,18 +768,18 @@
           }
         },
         {
-          "ruleId": "S3376",
+          "ruleId": "S1481",
           "level": "warning",
-          "message": "Make this class name end with 'Attribute'.",
+          "message": "Remove the unused local variable 'dataResult'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CourseApiController.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 37
+                  "startLine": 70,
+                  "startColumn": 21,
+                  "endLine": 70,
+                  "endColumn": 31
                 }
               }
             }
@@ -894,18 +789,60 @@
           }
         },
         {
-          "ruleId": "S2933",
+          "ruleId": "S1125",
           "level": "warning",
-          "message": "Make '_programMasterService' 'readonly'.",
+          "message": "Remove the unnecessary Boolean literal(s).",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramApiController.cs",
                 "region": {
-                  "startLine": 24,
-                  "startColumn": 39,
-                  "endLine": 24,
-                  "endColumn": 60
+                  "startLine": 155,
+                  "startColumn": 28,
+                  "endLine": 155,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4507",
+          "level": "warning",
+          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Startup.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 17,
+                  "endLine": 79,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CourseApiController.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 28,
+                  "endLine": 159,
+                  "endColumn": 35
                 }
               }
             }
@@ -936,27 +873,6 @@
           }
         },
         {
-          "ruleId": "S1854",
-          "level": "warning",
-          "message": "Remove this useless assignment to local variable 'listProgramMasters'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/ProgramMasterApiController.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 52,
-                  "endLine": 37,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3626",
           "level": "warning",
           "message": "Remove this redundant jump.",
@@ -965,9 +881,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
                 "region": {
-                  "startLine": 37,
+                  "startLine": 59,
                   "startColumn": 29,
-                  "endLine": 37,
+                  "endLine": 59,
                   "endColumn": 36
                 }
               }
@@ -978,39 +894,18 @@
           }
         },
         {
-          "ruleId": "S927",
+          "ruleId": "S1125",
           "level": "warning",
-          "message": "Rename parameter 'filterContext' to 'context' to match the interface declaration.",
+          "message": "Remove the unnecessary Boolean literal(s).",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
                 "region": {
-                  "startLine": 15,
-                  "startColumn": 64,
-                  "endLine": 15,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4507",
-          "level": "warning",
-          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Startup.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 17,
-                  "endLine": 71,
-                  "endColumn": 48
+                  "startLine": 147,
+                  "startColumn": 80,
+                  "endLine": 147,
+                  "endColumn": 87
                 }
               }
             }
@@ -1028,10 +923,10 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
                 "region": {
-                  "startLine": 28,
-                  "startColumn": 25,
-                  "endLine": 28,
-                  "endColumn": 42
+                  "startLine": 34,
+                  "startColumn": 17,
+                  "endLine": 34,
+                  "endColumn": 38
                 }
               }
             }
@@ -1041,18 +936,18 @@
           }
         },
         {
-          "ruleId": "S1125",
+          "ruleId": "S927",
           "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
+          "message": "Rename parameter 'filterContext' to 'context' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Controllers/CoursesApiController.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Api/Filters/CustomAuthorization.cs",
                 "region": {
-                  "startLine": 130,
-                  "startColumn": 28,
-                  "endLine": 130,
-                  "endColumn": 35
+                  "startLine": 29,
+                  "startColumn": 64,
+                  "endLine": 29,
+                  "endColumn": 77
                 }
               }
             }
@@ -1128,14 +1023,14 @@
             ]
           }
         },
-        "S1854": {
-          "id": "S1854",
-          "shortDescription": "Unused assignments should be removed",
-          "fullDescription": "A dead store happens when a local variable is assigned a value that is not read by any subsequent instruction. Calculating or retrieving a value only to then overwrite it or throw it away, could indicate a serious error in the code. Even if it's not an error, it is at best a waste of resources. Therefore all calculated values should be used.",
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
           "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1854",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
           "properties": {
-            "category": "Major Code Smell",
+            "category": "Minor Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
@@ -1151,23 +1046,6 @@
           "fullDescription": "If a boolean expression doesn't change the evaluation of the condition, then it is entirely unnecessary, and can be removed. If it is gratuitous because it does not match the programmer's intent, then it's a bug and the expression should be fixed.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2589",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S2933": {
-          "id": "S2933",
-          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
-          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that's not marked readonly but is only set in the constructor, it could cause confusion about the field's intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
           "properties": {
             "category": "Major Code Smell",
             "isEnabledByDefault": true,

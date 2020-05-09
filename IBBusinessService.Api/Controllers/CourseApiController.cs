@@ -68,7 +68,7 @@ namespace IBBusinessService.Api.Controllers
             {
                 var data = await _courseService.GetCourseById(id);
                 var dataResult = _mapper.Map<CourseDto>(data); 
-                response = Ok(data);
+                response = Ok(dataResult);
             }
             catch (Exception ex)
             {
@@ -156,7 +156,7 @@ namespace IBBusinessService.Api.Controllers
             try
             {
                 var status = await _courseService.DeleteCourse(id);
-                if (status == true)
+                if (status)
                      response = Ok(ConstantVarriables.DataDeleted);
                 else
                     response = NotFound(ConstantVarriables.CourseNotFound);

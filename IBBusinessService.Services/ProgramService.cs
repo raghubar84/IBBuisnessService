@@ -11,7 +11,7 @@ namespace IBBusinessService.Services
     /// </summary>
     public class ProgramService : IProgramService
     {
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
         public ProgramService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

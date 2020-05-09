@@ -152,7 +152,7 @@ namespace IBBusinessService.Api.Controllers
             try
             {
                 var status = await _programService.DeleteProgram(id);
-                if (status == true)
+                if (status)
                     response = Ok(ConstantVarriables.DataDeleted);
                 else
                     response = NotFound(ConstantVarriables.ProgramNotFound);

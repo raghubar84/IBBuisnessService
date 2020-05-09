@@ -7,7 +7,7 @@ namespace IBBusinessService.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private IBBusinessContext _dbContext;
+        private readonly IBBusinessContext _dbContext;
         private ICourseRepository _courseRepository;
         private IProgramRepository _programRepository;
         private IUserRepository _userRepository;

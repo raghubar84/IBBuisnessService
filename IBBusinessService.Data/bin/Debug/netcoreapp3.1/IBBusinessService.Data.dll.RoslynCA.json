@@ -12,165 +12,18 @@
       },
       "results": [
         {
-          "ruleId": "S1128",
+          "ruleId": "S125",
           "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
+          "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/GenericRepository.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 1,
-                  "endLine": 6,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_dbContext' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/StudentRepository.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 35,
-                  "endLine": 14,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/StudentRepository.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/StudentRepository.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/StudentRepository.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 19
+                  "startLine": 40,
+                  "startColumn": 17,
+                  "endLine": 40,
+                  "endColumn": 77
                 }
               }
             }
@@ -188,9 +41,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 215,
+                  "startLine": 217,
                   "startColumn": 9,
-                  "endLine": 215,
+                  "endLine": 217,
                   "endColumn": 16
                 }
               }
@@ -209,9 +62,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
                 "region": {
-                  "startLine": 11,
+                  "startLine": 10,
                   "startColumn": 35,
-                  "endLine": 11,
+                  "endLine": 10,
                   "endColumn": 45
                 }
               }
@@ -222,30 +75,122 @@
           }
         },
         {
-          "ruleId": "S1066",
+          "ruleId": "S1128",
           "level": "warning",
-          "message": "Merge this if statement with the enclosing one.",
+          "message": "Remove this unnecessary 'using'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 89,
-                  "startColumn": 17,
-                  "endLine": 89,
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/CourseRepository.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
                   "endColumn": 19
                 }
               }
             }
           ],
-          "relatedLocations": [
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
             {
-              "physicalLocation": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 13,
-                  "endLine": 87,
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3442",
+          "level": "warning",
+          "message": "Change the visibility of this constructor to 'protected'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endLine": 13,
                   "endColumn": 15
                 }
               }
@@ -256,18 +201,18 @@
           }
         },
         {
-          "ruleId": "S125",
+          "ruleId": "S927",
           "level": "warning",
-          "message": "Remove this commented out code.",
+          "message": "Rename parameter 'Id' to 'id' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
+                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/CourseRepository.cs",
                 "region": {
-                  "startLine": 38,
-                  "startColumn": 17,
-                  "endLine": 38,
-                  "endColumn": 77
+                  "startLine": 34,
+                  "startColumn": 53,
+                  "endLine": 34,
+                  "endColumn": 55
                 }
               }
             }
@@ -285,9 +230,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 212,
+                  "startLine": 214,
                   "startColumn": 13,
-                  "endLine": 212,
+                  "endLine": 214,
                   "endColumn": 50
                 }
               }
@@ -299,23 +244,6 @@
         }
       ],
       "rules": {
-        "S1066": {
-          "id": "S1066",
-          "shortDescription": "Collapsible \"if\" statements should be merged",
-          "fullDescription": "Merging collapsible if statements increases the code's readability.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1066",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
         "S1128": {
           "id": "S1128",
           "shortDescription": "Unused \"using\" should be removed",
@@ -380,6 +308,40 @@
               "C#",
               "SonarWay",
               "MainSourceScope"
+            ]
+          }
+        },
+        "S3442": {
+          "id": "S3442",
+          "shortDescription": "\"abstract\" classes should not have \"public\" constructors",
+          "fullDescription": "Since abstract classes can't be instantiated, there's no point in their having public or internal constructors. If there is basic initialization logic that should run when an extending class instance is created, you can by all means put it in a constructor, but make that constructor private or protected.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3442",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
             ]
           }
         }

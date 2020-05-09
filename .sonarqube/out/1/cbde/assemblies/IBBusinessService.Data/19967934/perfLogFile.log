@@ -1,0 +1,18 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508063954_InitialCreate.cs	161	_IBBusinessService.Data.Migrations.InitialCreate.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508064136_UserMasterTableCreated.cs	24	_IBBusinessService.Data.Migrations.UserMasterTableCreated.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508065044_UserRoleMappingAdded.cs	26	_IBBusinessService.Data.Migrations.UserRoleMappingAdded.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508070358_AllowedColumnAddedinUserRoleMapping.cs	6	_IBBusinessService.Data.Migrations.AllowedColumnAddedinUserRoleMapping.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508070358_AllowedColumnAddedinUserRoleMapping.cs	16	_IBBusinessService.Data.Migrations.AllowedColumnAddedinUserRoleMapping.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\CourseRepository.cs	42	_IBBusinessService.Data.Repositories.CourseRepository.CreateCourse$IBBusinessService.Domain.Models.Course$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\CourseRepository.cs	51	_IBBusinessService.Data.Repositories.CourseRepository.UpdateCourse$IBBusinessService.Domain.Models.Course$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\CourseRepository.cs	60	_IBBusinessService.Data.Repositories.CourseRepository.DeleteCourse$IBBusinessService.Domain.Models.Course$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\IBBusinessContext.cs	31	_IBBusinessService.Data.IBBusinessContext.OnConfiguring$Microsoft.EntityFrameworkCore.DbContextOptionsBuilder$	0	5
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\ProgramRepository.cs	41	_IBBusinessService.Data.Repositories.ProgramRepository.CreateProgram$IBBusinessService.Domain.Models.ProgramMaster$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\ProgramRepository.cs	50	_IBBusinessService.Data.Repositories.ProgramRepository.UpdateProgram$IBBusinessService.Domain.Models.ProgramMaster$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\ProgramRepository.cs	59	_IBBusinessService.Data.Repositories.ProgramRepository.DeleteProgram$IBBusinessService.Domain.Models.ProgramMaster$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs	17	_IBBusinessService.Data.Repositories.RepositoryBase$T$.FindAll$$	0	2
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs	22	_IBBusinessService.Data.Repositories.RepositoryBase$T$.FindByCondition$System.Linq.Expressions.Expression$System.Func$T.bool$$$	0	2
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs	27	_IBBusinessService.Data.Repositories.RepositoryBase$T$.Create$T$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs	32	_IBBusinessService.Data.Repositories.RepositoryBase$T$.Update$T$	0	3
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs	37	_IBBusinessService.Data.Repositories.RepositoryBase$T$.Delete$T$	0	3

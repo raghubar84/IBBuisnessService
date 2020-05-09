@@ -1,0 +1,28 @@
+Product projects
+---------------------------------------
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\IBBusinessService.Domain.csproj
+D:\Projects\IBBuisnessService\IBBusinessService.Data\IBBusinessService.Data.csproj
+D:\Projects\IBBuisnessService\IBBusinessService.Services\IBBusinessService.Services.csproj
+D:\Projects\IBBuisnessService\IBBusinessService.Api\IBBusinessService.Api.csproj
+
+
+Test projects
+---------------------------------------
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\IBBusinessService.Api.Test.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

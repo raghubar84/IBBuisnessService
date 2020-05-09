@@ -1,0 +1,36 @@
+D:\Projects\IBBuisnessService\IBBusinessService.Services\CourseService.cs
+GetAllCourses 1
+GetAllCourses -1
+GetCourseById 1
+GetCourseById -1
+CreateCourse 1
+CreateCourse -1
+UpdateCourse 1
+UpdateCourse -1
+DeleteCourse 1
+DeleteCourse -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Services\ProgramService.cs
+GetAllProgram 1
+GetAllProgram -1
+GetProgramById 1
+GetProgramById -1
+CreateProgram 1
+CreateProgram -1
+UpdateProgram 14
+UpdateProgram -1
+DeleteProgram 2
+DeleteProgram -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Services\UserRoleMappingService.cs
+FindAllAccess 1
+FindAllAccess -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Services\UserService.cs
+FindUserByName 1
+FindUserByName -1
+
+C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Services\obj\Debug\netcoreapp3.1\IBBusinessService.Services.AssemblyInfo.cs
+
