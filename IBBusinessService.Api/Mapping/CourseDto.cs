@@ -12,5 +12,6 @@ namespace IBBusinessService.Api.Mapping
         public string CourseName { get; set; }
         public int? ProgramId { get; set; }
         public DateTime? CreatedDate { get; set; }
+        public ProgramDto Program { get; set; }
     }
 }

@@ -55,6 +55,7 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
@@ -85,10 +86,12 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

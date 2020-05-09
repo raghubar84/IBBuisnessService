@@ -8,5 +8,6 @@ namespace IBBusinessService.Domain.Models
         public string CourseName { get; set; }
         public int? ProgramId { get; set; }
         public DateTime? CreatedDate { get; set; }
+        public ProgramMaster Program { get; set; }
     }
 }

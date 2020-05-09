@@ -9,6 +9,8 @@ using AutoMapper;
 using System.Collections.Generic;
 using IBBusinessService.Api.Mapping;
 using IBBusinessService.Api.Resources;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 
 namespace IBBusinessService.Api.Controllers
 {
@@ -20,12 +22,15 @@ namespace IBBusinessService.Api.Controllers
         private readonly ILogger<ProgramApiController> _logger;
         private readonly IProgramService _programService;
         private readonly IMapper _mapper;
-        public ProgramApiController(IProgramService programService, ILogger<ProgramApiController> logger, IMapper mapper)
+        private readonly IDistributedCache _cache;
+        public ProgramApiController(IProgramService programService, ILogger<ProgramApiController> logger, 
+            IMapper mapper, IDistributedCache cache)
         {
             _programService = programService;
             _logger = logger;
             _mapper = mapper;
-        }
+            _cache = cache;
+        }      
 
 
         /// <summary>
@@ -40,9 +45,23 @@ namespace IBBusinessService.Api.Controllers
             ObjectResult response;
             try
             {
-                var data = await _programService.GetAllProgram();
-                var dataResult = _mapper.Map<IEnumerable<ProgramDto>>(data);
-                response = Ok(dataResult);
+                List<ProgramDto> listProgram = new List<ProgramDto>();
+                //Get data from redis cache
+                var cachedObj = _cache.GetString("ProgramCookies");
+                if (string.IsNullOrEmpty(cachedObj))
+                {
+                    var data = await _programService.GetAllProgram();
+                    listProgram = _mapper.Map<List<ProgramDto>>(data);
+                    //Set data to redis cache
+                    var options = new DistributedCacheEntryOptions();
+                    options.SetAbsoluteExpiration(DateTimeOffset.Now.AddMinutes(1));
+                    _cache.SetString("ProgramCookies", JsonConvert.SerializeObject(listProgram), options);
+                }
+                else
+                {
+                    listProgram = JsonConvert.DeserializeObject<List<ProgramDto>>(cachedObj);
+                }
+                response = Ok(listProgram);
             }
             catch (Exception ex)
             {

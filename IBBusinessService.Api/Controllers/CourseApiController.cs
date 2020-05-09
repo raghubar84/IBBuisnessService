@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using IBBusinessService.Api.Filters;
@@ -8,7 +9,9 @@ using IBBusinessService.Api.Resources;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace IBBusinessService.Api.Controllers
 {
@@ -20,12 +23,15 @@ namespace IBBusinessService.Api.Controllers
         private readonly ICourseService _courseService;
         private readonly ILogger<CourseApiController> _logger;
         private readonly IMapper _mapper;
+        private readonly IDistributedCache _cache;
 
-        public CourseApiController(ICourseService courseService, ILogger<CourseApiController> logger, IMapper mapper)
+        public CourseApiController(ICourseService courseService, ILogger<CourseApiController> logger,
+            IMapper mapper, IDistributedCache cache)
         {
             _courseService = courseService;
             _logger = logger;
             _mapper = mapper;
+            _cache = cache;
         }
 
         /// <summary>
@@ -39,10 +45,25 @@ namespace IBBusinessService.Api.Controllers
             _logger.LogInformation(ConstantVarriables.CourseApiGetAllEnterMessage);
             ObjectResult response;
             try
-            {                 
-                var data = await _courseService.GetAllCourses();
-                var dataResult = _mapper.Map<IEnumerable<CourseDto>>(data);
-                response = Ok(dataResult);
+            {
+                List<CourseDto> listCourse = new List<CourseDto>();
+                //Get data from redis cache
+                var cachedObj = _cache.GetString("CourseCookies");
+                if (string.IsNullOrEmpty(cachedObj))
+                {
+                    var data = await _courseService.GetAllCourses();
+                    listCourse = _mapper.Map<List<CourseDto>>(data);
+                    //Set data to redis cache
+                    var options = new DistributedCacheEntryOptions();
+                    options.SetAbsoluteExpiration(DateTimeOffset.Now.AddMinutes(1));
+                    _cache.SetString("CourseCookies", JsonConvert.SerializeObject(listCourse), options);
+                }
+                else
+                {
+                    listCourse = JsonConvert.DeserializeObject<List<CourseDto>>(cachedObj);
+                }
+                
+                response = Ok(listCourse);
             }
             catch (Exception ex)
             {
@@ -67,7 +88,7 @@ namespace IBBusinessService.Api.Controllers
             try
             {
                 var data = await _courseService.GetCourseById(id);
-                var dataResult = _mapper.Map<CourseDto>(data); 
+                var dataResult = _mapper.Map<CourseDto>(data);
                 response = Ok(dataResult);
             }
             catch (Exception ex)
@@ -87,7 +108,7 @@ namespace IBBusinessService.Api.Controllers
         /// <returns>http response</returns>
         // PUT: api/CoursesApi/5        
         [HttpPut("{id}")]
-        public async Task<ActionResult> PutCourse(int id,[FromBody] CourseUpdateDto course)
+        public async Task<ActionResult> PutCourse(int id, [FromBody] CourseUpdateDto course)
         {
             _logger.LogInformation(ConstantVarriables.CourseApiPutCourseEnterMessage);
             ObjectResult response;
@@ -108,7 +129,7 @@ namespace IBBusinessService.Api.Controllers
                 }
             }
             _logger.LogInformation(ConstantVarriables.CourseApiPutCourseExitMessage);
-            return response;            
+            return response;
         }
 
         /// <summary>
@@ -139,7 +160,7 @@ namespace IBBusinessService.Api.Controllers
                 }
             }
             _logger.LogInformation(ConstantVarriables.CourseApiPostCourseExitMessage);
-            return response;            
+            return response;
         }
 
         /// <summary>
@@ -152,12 +173,12 @@ namespace IBBusinessService.Api.Controllers
         public async Task<ActionResult> DeleteCourse(int id)
         {
             _logger.LogInformation(ConstantVarriables.CourseApiDeleteCourseEnterMessage);
-            ObjectResult response;           
+            ObjectResult response;
             try
             {
                 var status = await _courseService.DeleteCourse(id);
                 if (status)
-                     response = Ok(ConstantVarriables.DataDeleted);
+                    response = Ok(ConstantVarriables.DataDeleted);
                 else
                     response = NotFound(ConstantVarriables.CourseNotFound);
             }
@@ -166,10 +187,10 @@ namespace IBBusinessService.Api.Controllers
                 _logger.LogError(ex, ex.Message);
                 response = BadRequest(ConstantVarriables.GenericExeptionMessage);
             }
-            
+
             _logger.LogInformation(ConstantVarriables.CourseApiDeleteCourseExitMessage);
-            return response;            
+            return response;
         }
-       
+
     }
 }

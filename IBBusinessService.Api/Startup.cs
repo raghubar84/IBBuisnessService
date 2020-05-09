@@ -62,6 +62,12 @@ namespace IBBusinessService.Api
 
             //Application-Insights-Log
             services.AddApplicationInsightsTelemetry();
+
+            //Azure-redis-cache
+            services.AddStackExchangeRedisCache(option =>
+            {
+                option.Configuration = Configuration.GetConnectionString("RedisConnection");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
