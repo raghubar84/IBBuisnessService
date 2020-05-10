@@ -12,10 +12,11 @@ using IBBusinessService.Api.Resources;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 
-namespace IBBusinessService.Api.Controllers
+namespace IBBusinessService.Api.Controllers.v1
 {
     [CustomAuthorization]
     [Route("api/v1/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [ApiController]
     public class ProgramApiController : ControllerBase
     {

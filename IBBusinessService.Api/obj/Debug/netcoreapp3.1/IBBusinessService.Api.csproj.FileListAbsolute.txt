@@ -198,3 +198,4 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CoreCompileInputs.cache
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Api.xml

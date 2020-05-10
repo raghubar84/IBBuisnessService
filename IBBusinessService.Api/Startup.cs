@@ -10,6 +10,8 @@ using IBBusinessService.Services;
 using IBBusinessService.Api.Resources;
 using IBBusinessService.Domain;
 using AutoMapper;
+using Microsoft.Extensions.PlatformAbstractions;
+using System.IO;
 
 namespace IBBusinessService.Api
 {
@@ -58,9 +60,7 @@ namespace IBBusinessService.Api
                         Url = "https://raghubarsites.in/"
                     }
                 });
-            });
-            services.AddSwaggerGen(c =>
-            {
+
                 c.SwaggerDoc("v2", new Info
                 {
                     Version = "v2",
@@ -73,8 +73,10 @@ namespace IBBusinessService.Api
                         Email = "raghubar.in@gmail.com",
                         Url = "https://raghubarsites.in/"
                     }
-                });
+                });               
             });
+            
+            services.AddMvc(x => x.Conventions.Add(new ApiExplorerVersionConvention()));
 
             //Application-Insights-Log
             services.AddApplicationInsightsTelemetry();

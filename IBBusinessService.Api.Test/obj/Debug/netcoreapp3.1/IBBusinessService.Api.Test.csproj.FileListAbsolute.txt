@@ -254,3 +254,5 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.genruntimeconfig.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Api.xml

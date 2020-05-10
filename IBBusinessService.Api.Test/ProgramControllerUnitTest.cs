@@ -1,5 +1,5 @@
 using AutoMapper;
-using IBBusinessService.Api.Controllers;
+using IBBusinessService.Api.Controllers.v1;
 using IBBusinessService.Api.Mapping;
 using IBBusinessService.Domain.Services;
 using Microsoft.AspNetCore.Hosting;
