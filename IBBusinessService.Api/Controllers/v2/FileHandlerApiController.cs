@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace IBBusinessService.Api.Controllers.v1
+namespace IBBusinessService.Api.Controllers.v2
 {
-    [Route("api/v1/[controller]")]
-    [ApiExplorerSettings(GroupName = "v1")]
+    [Route("api/v2/[controller]")]
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     public class FileHandlerApiController : ControllerBase
     {
