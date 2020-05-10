@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EyhUlUgkzdz0fn9d5dMJtUSraBDKF4yLHjohIsbuMFpUa7LspkI3P1o7TYcNnSVvnq3XzzLsqjncKn+VEL/k5A==",
+  "dgSpecHash": "7sUMiQskEtWquvDsb44nq8GdQqvgO9VLBM1QP5PnMo9ZPw0SEekBmkzq1Hc78N2rdcDL+zP7IaKCtMYbWZeZaw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\IBBuisnessService\\IBBusinessService.Api.Test\\IBBusinessService.Api.Test.csproj",
   "expectedPackageFiles": [
@@ -208,7 +208,8 @@
     "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\cognizantdotnet14\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

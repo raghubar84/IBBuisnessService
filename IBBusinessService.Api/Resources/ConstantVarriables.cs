@@ -39,5 +39,16 @@
         public const string ProgramApiDeleteProgramEnterMessage = "ProgramsApi DeleteProgram Method enter.";
         public const string ProgramApiDeleteProgramExitMessage = "ProgramsApi DeleteProgram Method exit.";
         #endregion
+
+        #region FileHandler
+        public const string FileNotFound = "File not found.";
+        public const string FileUploadMessage = "File uploaded and file path is: ";
+        public const string FileHandlerApiUploadEnterMessage = "FileHandlerApi Upload Method enter.";
+        public const string FileHandlerApiUploadExitMessage = "FileHandlerApi Upload Method exit.";
+        public const string FileHandlerApiDownloadEnterMessage = "FileHandlerApi Download Method enter.";
+        public const string FileHandlerApiDownloadExitMessage = "FileHandlerApi Download Method exit.";
+        public const string FileHandlerApiDeleteEnterMessage = "FileHandlerApi Delete Method enter.";
+        public const string FileHandlerApiDeleteExitMessage = "FileHandlerApi Delete Method exit.";
+        #endregion
     }
 }

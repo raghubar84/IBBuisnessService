@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 namespace IBBusinessService.Api.Controllers
 {
     [CustomAuthorization]
-    [Route("api/v1/[controller]")]
+    [Route("api/v2/[controller]")]
     [ApiController]
     public class CourseApiController : ControllerBase
     {

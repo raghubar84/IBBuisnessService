@@ -59,6 +59,22 @@ namespace IBBusinessService.Api
                     }
                 });
             });
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v2", new Info
+                {
+                    Version = "v2",
+                    Title = "IBBuisinessService API",
+                    Description = "IBBuisinessService Core 3.1 Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                    {
+                        Name = "Raghubar Gupta",
+                        Email = "raghubar.in@gmail.com",
+                        Url = "https://raghubarsites.in/"
+                    }
+                });
+            });
 
             //Application-Insights-Log
             services.AddApplicationInsightsTelemetry();
@@ -94,6 +110,7 @@ namespace IBBusinessService.Api
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API V2");
             });
         }
     }
