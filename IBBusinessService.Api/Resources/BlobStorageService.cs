@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace IBBusinessService.Api.Resources
 {
+    /// <summary>
+    /// Access Azure Blob Service to upload and dowload files
+    /// </summary>
     public class BlobStorageService
     {        
         private string accessKey;
@@ -20,6 +23,13 @@ namespace IBBusinessService.Api.Resources
             this.accessKey = configuration.GetConnectionString("AzureStorageAccessKey");            
         }
 
+        /// <summary>
+        /// Upload file synchronous
+        /// </summary>
+        /// <param name="strFileName"File Name</param>
+        /// <param name="fileData">File in byte format</param>
+        /// <param name="fileMimeType">Mime Type</param>
+        /// <returns>Uploaded url of file</returns>
         public string UploadFileToBlob(string strFileName, byte[] fileData, string fileMimeType)
         {
             try
@@ -35,6 +45,10 @@ namespace IBBusinessService.Api.Resources
             }
         }
 
+        /// <summary>
+        /// Delete file
+        /// </summary>
+        /// <param name="fileUrl">Url of file</param>
         public async void DeleteBlobData(string fileUrl)
         {
             Uri uriObj = new Uri(fileUrl);
@@ -54,7 +68,11 @@ namespace IBBusinessService.Api.Resources
             await blockBlob.DeleteAsync();
         }
 
-
+        /// <summary>
+        /// Gererate Unique name of file
+        /// </summary>
+        /// <param name="fileName">File Name</param>
+        /// <returns>Newly Generated file name</returns>
         private string GenerateFileName(string fileName)
         {
             string strFileName = string.Empty;
@@ -63,6 +81,13 @@ namespace IBBusinessService.Api.Resources
             return strFileName;
         }
 
+        /// <summary>
+        /// Upload file asynchronous
+        /// </summary>
+        /// <param name="strFileName"File Name</param>
+        /// <param name="fileData">File in byte format</param>
+        /// <param name="fileMimeType">Mime Type</param>
+        /// <returns>Uploaded url of file</returns>
         public async Task<string> UploadFileToBlobAsync(string strFileName, byte[] fileData, string fileMimeType)
         {
             try

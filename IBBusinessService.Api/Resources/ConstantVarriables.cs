@@ -50,5 +50,10 @@
         public const string FileHandlerApiDeleteEnterMessage = "FileHandlerApi Delete Method enter.";
         public const string FileHandlerApiDeleteExitMessage = "FileHandlerApi Delete Method exit.";
         #endregion
+
+        #region AzureFuntionInvoke
+        public const string AzureFuntionInvokeGetFunctionValueEnterMessage = "AzureFuntionInvoke GetFunctionValue Method enter.";
+        public const string AzureFuntionInvokeGetFunctionValueExitMessage = "AzureFuntionInvoke GetFunctionValue Method exit.";
+        #endregion
     }
 }
