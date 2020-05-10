@@ -3,7 +3,8 @@ ED:\Projects\IBBuisnessService\IBBusinessService.Domain\IUnitOfWork.csutf-8T
 KD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Assessment.csutf-8O
 FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Board.csutf-8P
 GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.csutf-8O
-FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.csutf-8V
+FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.csutf-8Q
+HD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Payload.csutf-8V
 MD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramGroup.csutf-8W
 ND:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramMaster.csutf-8P
 GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\School.csutf-8P
@@ -16,9 +17,12 @@ XD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\ICourseRepo
 YD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IProgramRepository.csutf-8_
 VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IRepositoryBase.csutf-8_
 VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRepository.csutf-8j
-aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.csutf-8Z
+aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.csutf-8_
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IBlobStorageService.csutf-8Z
 QD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\ICourseService.csutf-8[
-RD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService.csutf-8c
+RD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService.csutf-8_
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusConsumer.csutf-8]
+TD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusSender.csutf-8c
 ZD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.csutf-8X
 OD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.csutf-8g
 \C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8‚

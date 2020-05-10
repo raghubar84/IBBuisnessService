@@ -176,7 +176,7 @@ FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Board.cs
 }
 
  
-} Û
+} ý
 GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs
 	namespace 	
 IBBusinessService
@@ -250,9 +250,18 @@ CourseName  
 / 0
 }
 
-1 2
-} 
-} ­
+1 2
+public 
+ProgramMaster 
+Program $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+} 
+} ­
 
 FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs
 	namespace 	
@@ -348,7 +357,50 @@ FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs
 ;/ 0
 }1 2
 } 
-} ó
+} þ
+HD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Payload.cs
+	namespace 	
+IBBusinessService
+ 
+. 
+Domain "
+." #
+Models# )
+{ 
+public 
+
+class 
+Payload 
+{ 
+public 
+string 
+Name 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public 
+int 
+Goals 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+bool 
+Delete 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+} 
+}		 ó
 MD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramGroup.cs
 	namespace 	
 IBBusinessService
@@ -1528,7 +1580,63 @@ aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMa
 >Q R
 { 
 } 
-} þ	
+} Í
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IBlobStorageService.cs
+	namespace 	
+IBBusinessService
+ 
+. 
+Domain "
+." #
+Services# +
+{ 
+public 
+
+	interface 
+IBlobStorageService (
+{		 
+string 
+UploadFileToBlob 
+(  
+string  &
+strFileName' 2
+,2 3
+byte4 8
+[8 9
+]9 :
+fileData; C
+,C D
+stringE K
+fileMimeTypeL X
+)X Y
+;Y Z
+void 
+DeleteBlobData 
+( 
+string "
+fileUrl# *
+)* +
+;+ ,
+Task   
+<   
+string   
+>   !
+UploadFileToBlobAsync   *
+(  * +
+string  + 1
+strFileName  2 =
+,  = >
+byte  ? C
+[  C D
+]  D E
+fileData  F N
+,  N O
+string  P V
+fileMimeType  W c
+)  c d
+;  d e
+}!! 
+}"" þ	
 QD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\ICourseService.cs
 	namespace 	
 IBBusinessService
@@ -1681,60 +1789,119 @@ RD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService
 )))' (
 ;))( )
 }** 
-}++ Ñ
+}++ «
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusConsumer.cs
+	namespace 	
+IBBusinessService
+ 
+. 
+Domain "
+." #
+Services# +
+{ 
+public 
+
+	interface 
+IServiceBusConsumer (
+{		 
+void 6
+*RegisterOnMessageHandlerAndReceiveMessages 7
+(7 8
+)8 9
+;9 :
+Task 
+CloseTopicAsync 
+( 
+) 
+; 
+} 
+} Ö
+TD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusSender.cs
+	namespace 	
+IBBusinessService
+ 
+. 
+Domain "
+." #
+Services# +
+{ 
+public		 
+
+	interface		 
+IServiceBusSender		 &
+{
+
+ 
+Task 
+SendMessage 
+( 
+Payload  
+payload! (
+)( )
+;) *
+} 
+} Ñ
 ZD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.cs
-	namespace 	
-IBBusinessService
+	namespace 	
+IBBusinessService
  
-. 
-Domain "
-." #
-Services# +
-{ 
-public 
+. 
+Domain "
+." #
+Services# +
+{ 
+public
+
+ 
 
-	interface #
-IUserRoleMappingService ,
-{ 
-Task 
-< 
-IEnumerable 
-< 
-UserRoleMapping (
->( )
->) *
-FindAllAccess+ 8
-(8 9
-int9 <
-UserId= C
-)C D
-;D E
-} 
-} …
+	interface
+
+ #
+IUserRoleMappingService
+
+ ,
+{ 
+Task 
+< 
+IEnumerable 
+< 
+UserRoleMapping (
+>( )
+>) *
+FindAllAccess+ 8
+(8 9
+int9 <
+UserId= C
+)C D
+;D E
+} 
+} …
 OD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.cs
-	namespace 	
-IBBusinessService
+	namespace 	
+IBBusinessService
  
-. 
-Domain "
-." #
-Services# +
-{ 
-public 
+. 
+Domain "
+." #
+Services# +
+{ 
+public		 
 
-	interface 
-IUserService !
-{ 
-Task 
-< 
+	interface		 
+IUserService		 !
+{
+
+ 
+Task 
+< 
 
-UserMaster 
-> 
-FindUserByName '
-(' (
-string( .
-UserName/ 7
-)7 8
-;8 9
-} 
-} 
+UserMaster 
+> 
+FindUserByName '
+(' (
+string( .
+UserName/ 7
+)7 8
+;8 9
+} 
+} 

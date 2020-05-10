@@ -2,8 +2,10 @@ Product projects
 ---------------------------------------
 D:\Projects\IBBuisnessService\IBBusinessService.Domain\IBBusinessService.Domain.csproj
 D:\Projects\IBBuisnessService\IBBusinessService.Data\IBBusinessService.Data.csproj
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\IBBusinessAzure.Services.csproj
 D:\Projects\IBBuisnessService\IBBusinessService.Services\IBBusinessService.Services.csproj
 D:\Projects\IBBuisnessService\IBBusinessService.Api\IBBusinessService.Api.csproj
+D:\Projects\IBBuisnessService\IBBusinessConsole\IBBusinessConsole.ServiceBus.Reciever.csproj
 
 
 Test projects

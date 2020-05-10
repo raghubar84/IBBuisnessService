@@ -15,22 +15,16 @@ namespace IBBusinessAzure.Services
     /// Implementation class of IServiceBusConsumer
     /// </summary>
     public class ServiceBusConsumer: IServiceBusConsumer
-    {
-        //private readonly IProcessData _processData;
-        private readonly IConfiguration _configuration;
-        ISubscriptionClient _subscriptionClient;
+    {  
+        private readonly ISubscriptionClient _subscriptionClient;
         private const string Topic_Name = "mytopic";
         private const string Subcription_Name = "mysubcription";
         private readonly ILogger _logger;
 
-        public ServiceBusConsumer(//IProcessData processData,
-            IConfiguration configuration,
-            ILogger<ServiceBusConsumer> logger)
-        {
-            //_processData = processData;
-            _configuration = configuration;
+        public ServiceBusConsumer(IConfiguration configuration,ILogger<ServiceBusConsumer> logger)
+        {               
             _logger = logger;
-            _subscriptionClient = new SubscriptionClient(_configuration.GetConnectionString("ServiceBusConnectionString").ToString(), Topic_Name, Subcription_Name);
+            _subscriptionClient = new SubscriptionClient(configuration.GetConnectionString("ServiceBusConnectionString").ToString(), Topic_Name, Subcription_Name);
         }
 
         /// <summary>

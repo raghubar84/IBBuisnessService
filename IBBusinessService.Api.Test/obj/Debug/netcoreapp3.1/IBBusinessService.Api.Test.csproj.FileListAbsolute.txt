@@ -21,6 +21,9 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -60,6 +63,11 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -96,10 +104,12 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -238,11 +248,13 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Api.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Data.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Services.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Api.pdb
+D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Data.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Services.pdb
@@ -254,5 +266,3 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\obj\Debug\netcoreapp3.1\IBBusinessService.Api.Test.genruntimeconfig.cache
-D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
-D:\Projects\IBBuisnessService\IBBusinessService.Api.Test\bin\Debug\netcoreapp3.1\IBBusinessService.Api.xml

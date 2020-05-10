@@ -13,7 +13,7 @@ namespace IBBusinessAzure.Services
     /// </summary>
     public class BlobStorageService:IBlobStorageService
     {        
-        private string accessKey;
+        private readonly string accessKey;
 
         public BlobStorageService()
         {
@@ -38,9 +38,9 @@ namespace IBBusinessAzure.Services
                 string fileUrl = _task.Result;
                 return fileUrl;
             }
-            catch (Exception ex)
+            catch
             {
-                throw (ex);
+                throw;
             }
         }
 
@@ -111,9 +111,9 @@ namespace IBBusinessAzure.Services
                 }
                 return "";
             }
-            catch (Exception ex)
+            catch
             {
-                throw (ex);
+                throw;
             }
         }
     }

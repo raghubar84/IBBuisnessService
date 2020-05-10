@@ -12,27 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 17,
-                  "endLine": 40,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3251",
           "level": "warning",
           "message": "Supply an implementation for this partial method.",
@@ -41,136 +20,10 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 217,
+                  "startLine": 214,
                   "startColumn": 9,
-                  "endLine": 217,
+                  "endLine": 214,
                   "endColumn": 16
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_dbContext' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/UnitOfWork.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 35,
-                  "endLine": 10,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/CourseRepository.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/UserRoleMappingRepository.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 19
                 }
               }
             }
@@ -201,27 +54,6 @@
           }
         },
         {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'Id' to 'id' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/Repositories/CourseRepository.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 53,
-                  "endLine": 34,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3251",
           "level": "warning",
           "message": "Supply an implementation for the partial method, otherwise this call will be ignored.",
@@ -230,9 +62,9 @@
               "resultFile": {
                 "uri": "file:///D:/Projects/IBBuisnessService/IBBusinessService.Data/IBBusinessContext.cs",
                 "region": {
-                  "startLine": 214,
+                  "startLine": 211,
                   "startColumn": 13,
-                  "endLine": 214,
+                  "endLine": 211,
                   "endColumn": 50
                 }
               }
@@ -244,57 +76,6 @@
         }
       ],
       "rules": {
-        "S1128": {
-          "id": "S1128",
-          "shortDescription": "Unused \"using\" should be removed",
-          "fullDescription": "Although unnecessary using won't change anything to the produced application, removing them:",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1128",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S125": {
-          "id": "S125",
-          "shortDescription": "Sections of code should not be commented out",
-          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S2933": {
-          "id": "S2933",
-          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
-          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that's not marked readonly but is only set in the constructor, it could cause confusion about the field's intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
         "S3251": {
           "id": "S3251",
           "shortDescription": "Implementations should be provided for \"partial\" methods",
@@ -319,23 +100,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3442",
           "properties": {
             "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S927": {
-          "id": "S927",
-          "shortDescription": "parameter names should match base declaration and other partial definitions",
-          "fullDescription": "The name of a parameter in an externally visible method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
-          "properties": {
-            "category": "Critical Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

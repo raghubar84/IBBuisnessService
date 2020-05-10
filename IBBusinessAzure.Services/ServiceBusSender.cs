@@ -15,17 +15,15 @@ namespace IBBusinessAzure.Services
     /// </summary>
     public class ServiceBusSender:IServiceBusSender
     {
-        private readonly TopicClient _topicClient;
-        private readonly IConfiguration _configuration;
+        private readonly TopicClient _topicClient;        
         private const string TOPIC_PATH = "mytopic";
         private readonly ILogger _logger;
 
         public ServiceBusSender(IConfiguration configuration, ILogger<ServiceBusSender> logger)
-        {
-            _configuration = configuration;
+        {            
             _logger = logger;
             _topicClient = new TopicClient(
-                _configuration.GetConnectionString("ServiceBusConnectionString"),
+                configuration.GetConnectionString("ServiceBusConnectionString"),
                 TOPIC_PATH
             );
         }

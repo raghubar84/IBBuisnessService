@@ -35,7 +35,7 @@ FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Board.cs
 
  
 
-		 $…
+		 $‘
 GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs
 
  
@@ -48,7 +48,9 @@ GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs
 
 
 
- $œ
+ $
+
+ $œ
 FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs
 
  
@@ -65,7 +67,16 @@ FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs
 
  
 
- $‹
+ $z
+HD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Payload.cs
+
+ 
+
+ 
+
+ 
+
+ ‹
 MD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramGroup.cs
 
  %
@@ -301,7 +312,30 @@ VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserReposi
 + 3o
 aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.cs
 
- /×
+ /Ü
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IBlobStorageService.cs
+
+ (
+
+ 
+
+' 2
+
+; C
+
+L X
+
+ 
+
+# *
+
+   *
+
+  2 =
+
+  F N
+
+  W c×
 QD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\ICourseService.cs
 
 
@@ -351,18 +385,34 @@ RD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService
 
 ))  
 
-))% '€
+))% '|
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusConsumer.cs
+
+ (
+
+ 7
+
+ z
+TD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusSender.cs
+
+		 &
+
+ 
+
+! (€
 ZD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.cs
 
- ,
+
+
+ ,
 
-+ 8
++ 8
 
-= Cu
+= Cu
 OD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.cs
 
- !
+		 !
 
- '
+ '
 
-/ 7
+/ 7

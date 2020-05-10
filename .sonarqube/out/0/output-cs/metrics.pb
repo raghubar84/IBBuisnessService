@@ -5,11 +5,14 @@ KD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Assessment.cs 
 Z
 FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Board.cs 8r
 	
-\
-GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs 8r	
-]
+]
+GD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs 
+8
+r	
+]
 FD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs 8r	
-b
+[
+HD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Payload.cs 8r		b
 MD:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramGroup.cs 8r	
 c
 ND:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramMaster.cs 8r	
@@ -35,12 +38,20 @@ VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IRepository
 o
 VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRepository.csjr		
 n
-aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.csr
+aD:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.csr}
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IBlobStorageService.csj
+r
+	 !"
 QD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\ICourseService.csj	 !"%&'(r
 #)*+€
 RD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService.csj	 !"%&'(r
-#)*+v
-ZD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.csj	
-rk
-OD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.csj	
-r
+#)*+p
+VD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusConsumer.csj	
+r		m
+TD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusSender.csjr		
+t
+ZD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.csj	r
+
+h
+OD:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.csjr		
+
