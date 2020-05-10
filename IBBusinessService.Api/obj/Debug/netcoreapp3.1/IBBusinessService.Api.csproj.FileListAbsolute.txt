@@ -198,3 +198,14 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.csproj.CoreCompileInputs.cache
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.pdb

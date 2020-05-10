@@ -10,8 +10,7 @@ using IBBusinessService.Services;
 using IBBusinessService.Api.Resources;
 using IBBusinessService.Domain;
 using AutoMapper;
-using Microsoft.Extensions.PlatformAbstractions;
-using System.IO;
+using IBBusinessAzure.Services;
 
 namespace IBBusinessService.Api
 {
@@ -40,6 +39,9 @@ namespace IBBusinessService.Api
             services.AddScoped<IProgramService, ProgramService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRoleMappingService, UserRoleMappingService>();
+            services.AddScoped<IBlobStorageService, BlobStorageService>();
+            services.AddScoped<IServiceBusSender, ServiceBusSender>();
+            services.AddSingleton<IServiceBusConsumer, ServiceBusConsumer>();
 
             //AutoMapper
             services.AddAutoMapper(typeof(Startup));
@@ -114,6 +116,10 @@ namespace IBBusinessService.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API V2");
             });
+
+            //Servicebus Topic Receive Handling
+            //var bus = app.ApplicationServices.GetService<IServiceBusConsumer>();
+            //bus.RegisterOnMessageHandlerAndReceiveMessages();
         }
     }
 }

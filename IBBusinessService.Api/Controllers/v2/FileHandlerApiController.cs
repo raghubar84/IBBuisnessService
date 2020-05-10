@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 using IBBusinessService.Api.Resources;
+using IBBusinessService.Domain.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,9 +15,11 @@ namespace IBBusinessService.Api.Controllers.v2
     public class FileHandlerApiController : ControllerBase
     {
         private readonly ILogger<FileHandlerApiController> _logger;
-        public FileHandlerApiController(ILogger<FileHandlerApiController> logger)
+        private readonly IBlobStorageService _blobStorageService;
+        public FileHandlerApiController(ILogger<FileHandlerApiController> logger, IBlobStorageService blobStorageService)
         {
             _logger = logger;
+            _blobStorageService = blobStorageService;
         }
 
         /// <summary>
@@ -24,7 +27,7 @@ namespace IBBusinessService.Api.Controllers.v2
         /// </summary>
         /// <param name="file">file</param>
         /// <returns>http response with file upload url</returns>
-        //// Post: api/FileHandlerApi/Upload
+        //// Post: api/v2/FileHandlerApi/Upload
         [HttpPost]
         public async Task<IActionResult> Upload(IFormFile file)
         {
@@ -34,10 +37,9 @@ namespace IBBusinessService.Api.Controllers.v2
             {
                 var fileName = Path.GetFileName(file.FileName);
                 string mimeType = file.ContentType;
-                byte[] fileData = new byte[file.Length];
-                BlobStorageService objBlobService = new BlobStorageService();
+                byte[] fileData = new byte[file.Length];                
 
-                string filePath = await objBlobService.UploadFileToBlobAsync(fileName, fileData, mimeType);
+                string filePath = await _blobStorageService.UploadFileToBlobAsync(fileName, fileData, mimeType);
                 response = Ok(ConstantVarriables.FileUploadMessage + filePath);
             }
             catch (Exception ex)

@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IBBusinessAzure.Services\IBBusinessAzure.Services.csproj" />
     <ProjectReference Include="..\IBBusinessService.Services\IBBusinessService.Services.csproj" />
   </ItemGroup>
 

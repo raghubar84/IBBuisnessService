@@ -55,5 +55,11 @@
         public const string AzureFuntionInvokeGetFunctionValueEnterMessage = "AzureFuntionInvoke GetFunctionValue Method enter.";
         public const string AzureFuntionInvokeGetFunctionValueExitMessage = "AzureFuntionInvoke GetFunctionValue Method exit.";
         #endregion
+
+        #region AzureServiceBus
+        public const string TopicPushSuccessMessage = "Topic successfuly pushed to azure service bus.";
+        public const string AzureServiceBusApiCreateEnterMessage = "AzureServiceBusAp Create Method enter.";
+        public const string AzureServiceBusApiCreateExitMessage = "AzureServiceBusAp Create Method exit.";
+        #endregion
     }
 }
