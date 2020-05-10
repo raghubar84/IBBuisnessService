@@ -23,3 +23,4 @@
 23. Secure Coding - private varriables used, try catch used for exception and sql query not used.
 24. Coding standards - varriable naming convention used, code summary added.
 25. Azure Function configured and invoked from API to test.
+26. Azure Service Bus Implemnted
