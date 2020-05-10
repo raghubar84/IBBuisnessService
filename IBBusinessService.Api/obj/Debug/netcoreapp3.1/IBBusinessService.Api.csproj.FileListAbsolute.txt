@@ -37,6 +37,9 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -55,6 +58,7 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
@@ -74,6 +78,11 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
@@ -85,10 +94,12 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Micr
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -99,9 +110,11 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Syst
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -175,9 +188,11 @@ D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runt
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.dll
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Services.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Data.pdb
 D:\Projects\IBBuisnessService\IBBusinessService.Api\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.pdb

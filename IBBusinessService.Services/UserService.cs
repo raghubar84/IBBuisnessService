@@ -1,9 +1,6 @@
 ﻿using IBBusinessService.Domain;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IBBusinessService.Services
@@ -13,7 +10,7 @@ namespace IBBusinessService.Services
     /// </summary>
     public class UserService : IUserService
     {
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
         public UserService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

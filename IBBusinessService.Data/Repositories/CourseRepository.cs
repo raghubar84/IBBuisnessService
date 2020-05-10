@@ -2,7 +2,6 @@
 using IBBusinessService.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace IBBusinessService.Data.Repositories
@@ -23,7 +22,7 @@ namespace IBBusinessService.Data.Repositories
         /// <returns></returns>
         public async Task<IEnumerable<Course>> GetAllCourses()
         {
-            return await FindAll().ToListAsync();
+            return await FindAll().Include(p => p.Program).ToListAsync();
         }
 
         /// <summary>
@@ -31,9 +30,9 @@ namespace IBBusinessService.Data.Repositories
         /// </summary>
         /// <param name="id">needs to pass course id</param>
         /// <returns>Course Details </returns>
-        public async Task<Course> GetCourseById(int Id)
+        public async Task<Course> GetCourseById(int id)
         {
-            return await FindByCondition(c => c.CourseId.Equals(Id)).FirstOrDefaultAsync();
+            return await FindByCondition(c => c.CourseId.Equals(id)).FirstOrDefaultAsync();
         }
 
         /// <summary>

@@ -1,0 +1,4 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\BlobStorageService.cs	74	_IBBusinessAzure.Services.BlobStorageService.GenerateFileName$string$	0	2
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\ServiceBusConsumer.cs	32	_IBBusinessAzure.Services.ServiceBusConsumer.RegisterOnMessageHandlerAndReceiveMessages$$	0	3
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\ServiceBusConsumer.cs	63	_IBBusinessAzure.Services.ServiceBusConsumer.ExceptionReceivedHandler$Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs$	0	2

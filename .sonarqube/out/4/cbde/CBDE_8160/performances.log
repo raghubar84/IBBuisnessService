@@ -1,0 +1,96 @@
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Controllers\v1\CourseApiController.cs
+GetCourse 3
+GetCourse -1
+GetCourse 3
+GetCourse -1
+PutCourse 4
+PutCourse -1
+PostCourse 3
+PostCourse -1
+DeleteCourse 3
+DeleteCourse -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Controllers\v1\ProgramApiController.cs
+Get 4
+Get -1
+GetProgram 3
+GetProgram -1
+Post 4
+Post -1
+Put 3
+Put -1
+Delete 3
+Delete -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Controllers\v2\AzureFunctionInvokeController.cs
+GetFunctionValue 3
+GetFunctionValue -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Controllers\v2\AzureServiceBusApiController.cs
+Create 3
+Create -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Controllers\v2\FileHandlerApiController.cs
+Upload 3
+Upload -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Filters\CustomAuthorization.cs
+OnAuthorization 11
+OnAuthorization -1
+GetUser 6
+GetUser -1
+UserHasAccess 4
+UserHasAccess -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\CourseCreationDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\CourseDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\CourseUpdateDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\MappingProfile.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\PayloadDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\ProgramCreationDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\ProgramDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Mapping\ProgramUpdateDto.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Program.cs
+Main 5
+Main -1
+CreateHostBuilder 3
+CreateHostBuilder -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Resources\ApiExplorerVersionConvention.cs
+Apply 8
+Apply -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Resources\AzureFunctionInvokeHelper.cs
+InvokeFunction 3
+InvokeFunction -1
+SerializeJsonIntoStream 4
+SerializeJsonIntoStream -1
+CreateHttpContent 5
+CreateHttpContent -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Resources\ConstantVarriables.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Resources\Contact.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Resources\Info.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\Startup.cs
+ConfigureServices 3
+ConfigureServices -1
+Configure 3
+Configure -1
+
+C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.MvcApplicationPartsAssemblyInfo.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Api\obj\Debug\netcoreapp3.1\IBBusinessService.Api.AssemblyInfo.cs
+

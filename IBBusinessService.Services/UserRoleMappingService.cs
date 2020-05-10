@@ -2,9 +2,7 @@
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IBBusinessService.Services
@@ -14,7 +12,7 @@ namespace IBBusinessService.Services
     /// </summary>
     public class UserRoleMappingService : IUserRoleMappingService
     {
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
         public UserRoleMappingService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

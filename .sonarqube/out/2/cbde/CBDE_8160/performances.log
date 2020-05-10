@@ -1,0 +1,28 @@
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\BlobStorageService.cs
+UploadFileToBlob 22
+UploadFileToBlob -1
+DeleteBlobData 4
+DeleteBlobData -1
+GenerateFileName 36
+GenerateFileName -1
+UploadFileToBlobAsync 4
+UploadFileToBlobAsync -1
+
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\ServiceBusConsumer.cs
+RegisterOnMessageHandlerAndReceiveMessages 6
+RegisterOnMessageHandlerAndReceiveMessages -1
+ProcessMessagesAsync 3
+ProcessMessagesAsync -1
+ExceptionReceivedHandler 6
+ExceptionReceivedHandler -1
+CloseTopicAsync 3
+CloseTopicAsync -1
+
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\ServiceBusSender.cs
+SendMessage 3
+SendMessage -1
+
+C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.AssemblyInfo.cs
+

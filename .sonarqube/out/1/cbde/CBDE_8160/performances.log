@@ -1,0 +1,102 @@
+D:\Projects\IBBuisnessService\IBBusinessService.Data\IBBusinessContext.cs
+OnConfiguring 6
+OnConfiguring -1
+OnModelCreating 3
+OnModelCreating -1
+OnModelCreatingPartial 3
+OnModelCreatingPartial -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508063954_InitialCreate.cs
+Up 3
+Up -1
+Down 7
+Down -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508063954_InitialCreate.Designer.cs
+BuildTargetModel 4
+BuildTargetModel -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508064136_UserMasterTableCreated.cs
+Up 3
+Up -1
+Down 3
+Down -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508064136_UserMasterTableCreated.Designer.cs
+BuildTargetModel 3
+BuildTargetModel -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508065044_UserRoleMappingAdded.cs
+Up 3
+Up -1
+Down 23
+Down -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508065044_UserRoleMappingAdded.Designer.cs
+BuildTargetModel 3
+BuildTargetModel -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508070358_AllowedColumnAddedinUserRoleMapping.cs
+Up 5
+Up -1
+Down 4
+Down -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\20200508070358_AllowedColumnAddedinUserRoleMapping.Designer.cs
+BuildTargetModel 9
+BuildTargetModel -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Migrations\IBBusinessContextModelSnapshot.cs
+BuildModel 3
+BuildModel -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\CourseRepository.cs
+GetAllCourses 3
+GetAllCourses -1
+GetCourseById 3
+GetCourseById -1
+CreateCourse 6
+CreateCourse -1
+UpdateCourse 3
+UpdateCourse -1
+DeleteCourse 3
+DeleteCourse -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\ProgramRepository.cs
+GetAllProgram 3
+GetAllProgram -1
+GetProgramById 3
+GetProgramById -1
+CreateProgram 3
+CreateProgram -1
+UpdateProgram 3
+UpdateProgram -1
+DeleteProgram 3
+DeleteProgram -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\RepositoryBase.cs
+FindAll 6
+FindAll -1
+FindByCondition 6
+FindByCondition -1
+Create 5
+Create -1
+Update 4
+Update -1
+Delete 4
+Delete -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\UserRepository.cs
+FindByName 3
+FindByName -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\Repositories\UserRoleMappingRepository.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\UnitOfWork.cs
+Save 4
+Save -1
+
+C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Data\obj\Debug\netcoreapp3.1\IBBusinessService.Data.AssemblyInfo.cs
+

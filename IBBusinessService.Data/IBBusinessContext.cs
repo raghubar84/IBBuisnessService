@@ -1,7 +1,5 @@
-﻿using System;
-using IBBusinessService.Domain.Models;
+﻿using IBBusinessService.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 
 namespace IBBusinessService.Data
@@ -36,8 +34,7 @@ namespace IBBusinessService.Data
                 var builder = new ConfigurationBuilder().SetBasePath(System.IO.Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
                 var configuration = builder.Build();
                 var connectionString = configuration.GetConnectionString("IBBusinessConnectionString");
-                optionsBuilder.UseSqlServer(connectionString);
-                //optionsBuilder.UseSqlServer("IBBusinessConnectionString");
+                optionsBuilder.UseSqlServer(connectionString);                
             }
         }
 

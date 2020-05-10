@@ -1,0 +1,126 @@
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\IUnitOfWork.cs
+Save 5
+Save -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Assessment.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Board.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Course.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Grade.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Payload.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramGroup.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\ProgramMaster.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\School.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Stream.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\Student.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\StudentViewModel.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\UserMaster.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Models\UserRoleMapping.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\ICourseRepository.cs
+GetAllCourses 3
+GetAllCourses -1
+GetCourseById 3
+GetCourseById -1
+CreateCourse 3
+CreateCourse -1
+UpdateCourse 3
+UpdateCourse -1
+DeleteCourse 3
+DeleteCourse -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IProgramRepository.cs
+GetAllProgram 3
+GetAllProgram -1
+GetProgramById 4
+GetProgramById -1
+CreateProgram 3
+CreateProgram -1
+UpdateProgram 3
+UpdateProgram -1
+DeleteProgram 3
+DeleteProgram -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IRepositoryBase.cs
+FindAll 3
+FindAll -1
+FindByCondition 4
+FindByCondition -1
+Create 4
+Create -1
+Update 4
+Update -1
+Delete 3
+Delete -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRepository.cs
+FindByName 3
+FindByName -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Repositories\IUserRoleMappingRepository.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IBlobStorageService.cs
+UploadFileToBlob 4
+UploadFileToBlob -1
+DeleteBlobData 3
+DeleteBlobData -1
+UploadFileToBlobAsync 3
+UploadFileToBlobAsync -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\ICourseService.cs
+GetAllCourses 3
+GetAllCourses -1
+GetCourseById 3
+GetCourseById -1
+CreateCourse 3
+CreateCourse -1
+UpdateCourse 3
+UpdateCourse -1
+DeleteCourse 3
+DeleteCourse -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IProgramService.cs
+GetAllProgram 3
+GetAllProgram -1
+GetProgramById 3
+GetProgramById -1
+CreateProgram 3
+CreateProgram -1
+UpdateProgram 4
+UpdateProgram -1
+DeleteProgram 3
+DeleteProgram -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusConsumer.cs
+RegisterOnMessageHandlerAndReceiveMessages 4
+RegisterOnMessageHandlerAndReceiveMessages -1
+CloseTopicAsync 25
+CloseTopicAsync -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IServiceBusSender.cs
+SendMessage 7
+SendMessage -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserRoleMappingService.cs
+FindAllAccess 4
+FindAllAccess -1
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\Services\IUserService.cs
+FindUserByName 5
+FindUserByName -1
+
+C:\Users\cognizantdotnet14\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Projects\IBBuisnessService\IBBusinessService.Domain\obj\Debug\netcoreapp3.1\IBBusinessService.Domain.AssemblyInfo.cs
+

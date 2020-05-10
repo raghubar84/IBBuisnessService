@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IBBusinessService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:IBBusinessService.Api.Controllers.v1.CourseApiController.GetCourse">
+            <summary>
+            To get all course list
+            </summary>
+            <returns>list of course</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.CourseApiController.GetCourse(System.Int32)">
+            <summary>
+            To get course details
+            </summary>
+            <param name="id">CourseId</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.CourseApiController.PutCourse(System.Int32,IBBusinessService.Api.Mapping.CourseUpdateDto)">
+            <summary>
+            To update course data
+            </summary>
+            <param name="id">CourseId</param>
+            <param name="course">course data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.CourseApiController.PostCourse(IBBusinessService.Api.Mapping.CourseCreationDto)">
+            <summary>
+            To create course
+            </summary>
+            <param name="course">course data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.CourseApiController.DeleteCourse(System.Int32)">
+            <summary>
+            To delete course
+            </summary>
+            <param name="id">CourseId</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.FileHandlerApiController.Upload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload file to azure blob
+            </summary>
+            <param name="file">file</param>
+            <returns>http response with file upload url</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.ProgramApiController.Get">
+            <summary>
+            To get program list
+            </summary>
+            <returns>list of programs</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.ProgramApiController.GetProgram(System.Int32)">
+            <summary>
+            To get program details
+            </summary>
+            <param name="id">ProgramId</param>
+            <returns>Prgram Details</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.ProgramApiController.Post(IBBusinessService.Api.Mapping.ProgramCreationDto)">
+            <summary>
+            To create program
+            </summary>
+            <param name="program">program data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.ProgramApiController.Put(System.Int32,IBBusinessService.Api.Mapping.ProgramUpdateDto)">
+            <summary>
+            To update program
+            </summary>
+            <param name="id">ProgramId</param>
+            <param name="program">program data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v1.ProgramApiController.Delete(System.Int32)">
+            <summary>
+            To delete program
+            </summary>
+            <param name="id">ProgramId</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v2.CourseApiController.GetCourse">
+            <summary>
+            To get all course list
+            </summary>
+            <returns>list of course</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v2.CourseApiController.GetCourse(System.Int32)">
+            <summary>
+            To get course details
+            </summary>
+            <param name="id">CourseId</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v2.CourseApiController.PutCourse(System.Int32,IBBusinessService.Api.Mapping.CourseUpdateDto)">
+            <summary>
+            To update course data
+            </summary>
+            <param name="id">CourseId</param>
+            <param name="course">course data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v2.CourseApiController.PostCourse(IBBusinessService.Api.Mapping.CourseCreationDto)">
+            <summary>
+            To create course
+            </summary>
+            <param name="course">course data</param>
+            <returns>http response</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Controllers.v2.CourseApiController.DeleteCourse(System.Int32)">
+            <summary>
+            To delete course
+            </summary>
+            <param name="id">CourseId</param>
+            <returns>http response</returns>
+        </member>
+        <member name="T:IBBusinessService.Api.Filters.CustomAuthorizationAttribute">
+            <summary>
+            filter attribute for authorize user
+            </summary>
+        </member>
+        <member name="M:IBBusinessService.Api.Filters.CustomAuthorizationAttribute.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            Implementaion of authorization
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IBBusinessService.Api.Filters.CustomAuthorizationAttribute.GetUser(System.String)">
+            <summary>
+            To get user details
+            </summary>
+            <param name="authToken">UserName</param>
+            <returns>user data</returns>
+        </member>
+        <member name="M:IBBusinessService.Api.Filters.CustomAuthorizationAttribute.UserHasAccess(System.Int32,System.String,System.String)">
+            <summary>
+            To check user access
+            </summary>
+            <param name="UserId"></param>
+            <param name="ControllerName"></param>
+            <param name="ActionName"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.CourseCreationDto">
+            <summary>
+            To Create course data
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.CourseDto">
+            <summary>
+            To get course data
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.CourseUpdateDto">
+            <summary>
+            To Update course data
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.MappingProfile">
+            <summary>
+            Automapper to map dto to entity class
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.ProgramCreationDto">
+            <summary>
+            To create a program
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Mapping.ProgramDto">
+            <summary>
+            To get program data
+            </summary>
+        </member>
+        <member name="T:IBBusinessService.Api.Resources.ConstantVarriables">
+            <summary>
+            To store string messages
+            </summary>
+        </member>
+    </members>
+</doc>

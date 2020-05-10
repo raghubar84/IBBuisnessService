@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using IBBusinessService.Domain.Models;
 using IBBusinessService.Domain.Services;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Net.Http.Headers;
 
 namespace IBBusinessService.Api.Filters
 {
@@ -17,7 +14,7 @@ namespace IBBusinessService.Api.Filters
     /// filter attribute for authorize user
     /// </summary>
     [AttributeUsage(AttributeTargets.Class)]
-    public class CustomAuthorization : Attribute, IAuthorizationFilter
+    public class CustomAuthorizationAttribute : Attribute, IAuthorizationFilter
     {
         private IUserService _userService;
         private IUserRoleMappingService _userRoleMappingService;
@@ -25,16 +22,16 @@ namespace IBBusinessService.Api.Filters
         /// <summary>
         /// Implementaion of authorization
         /// </summary>
-        /// <param name="filterContext"></param>
-        public void OnAuthorization(AuthorizationFilterContext filterContext)
+        /// <param name="context"></param>
+        public void OnAuthorization(AuthorizationFilterContext context)
         {
-            _userService = filterContext.HttpContext.RequestServices.GetService<IUserService>();
-            _userRoleMappingService = filterContext.HttpContext.RequestServices.GetService<IUserRoleMappingService>();
+            _userService = context.HttpContext.RequestServices.GetService<IUserService>();
+            _userRoleMappingService = context.HttpContext.RequestServices.GetService<IUserRoleMappingService>();
 
-            if (filterContext != null)
+            if (context != null)
             {
                 Microsoft.Extensions.Primitives.StringValues authTokens;
-                filterContext.HttpContext.Request.Headers.TryGetValue("authToken", out authTokens);
+                context.HttpContext.Request.Headers.TryGetValue("authToken", out authTokens);
 
                 var authToken = authTokens.FirstOrDefault();
 
@@ -43,7 +40,7 @@ namespace IBBusinessService.Api.Filters
                     var user = GetUser(authToken);
                     if (user != null)
                     {   
-                        var controllerActionDescriptor = filterContext.ActionDescriptor as Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor;
+                        var controllerActionDescriptor = context.ActionDescriptor as Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor;
                         string controllerName = controllerActionDescriptor?.ControllerName;
                         string actionName = controllerActionDescriptor?.ActionName;
 
@@ -51,21 +48,21 @@ namespace IBBusinessService.Api.Filters
 
                         if (hasAccess)
                         {
-                            filterContext.HttpContext.Response.Headers.Add("authToken", authToken);
-                            filterContext.HttpContext.Response.Headers.Add("AuthStatus", "Authorized");
+                            context.HttpContext.Response.Headers.Add("authToken", authToken);
+                            context.HttpContext.Response.Headers.Add("AuthStatus", "Authorized");
 
-                            filterContext.HttpContext.Response.Headers.Add("storeAccessiblity", "Authorized");
+                            context.HttpContext.Response.Headers.Add("storeAccessiblity", "Authorized");
 
                             return;
                         }
                         else
                         {
-                            filterContext.HttpContext.Response.Headers.Add("authToken", authToken);
-                            filterContext.HttpContext.Response.Headers.Add("AuthStatus", "NotAuthorized");
+                            context.HttpContext.Response.Headers.Add("authToken", authToken);
+                            context.HttpContext.Response.Headers.Add("AuthStatus", "NotAuthorized");
 
-                            filterContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.Forbidden;
-                            filterContext.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Not Authorized";
-                            filterContext.Result = new JsonResult("NotAuthorized")
+                            context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Forbidden;
+                            context.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Not Authorized";
+                            context.Result = new JsonResult("NotAuthorized")
                             {
                                 Value = new
                                 {
@@ -77,12 +74,12 @@ namespace IBBusinessService.Api.Filters
                     }
                     else
                     {
-                        filterContext.HttpContext.Response.Headers.Add("authToken", authToken);
-                        filterContext.HttpContext.Response.Headers.Add("AuthStatus", "NotAuthorized");
+                        context.HttpContext.Response.Headers.Add("authToken", authToken);
+                        context.HttpContext.Response.Headers.Add("AuthStatus", "NotAuthorized");
 
-                        filterContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.Forbidden;
-                        filterContext.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Not Authorized";
-                        filterContext.Result = new JsonResult("NotAuthorized")
+                        context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Forbidden;
+                        context.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Not Authorized";
+                        context.Result = new JsonResult("NotAuthorized")
                         {
                             Value = new
                             {
@@ -95,9 +92,9 @@ namespace IBBusinessService.Api.Filters
                 }
                 else
                 {
-                    filterContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.ExpectationFailed;
-                    filterContext.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Please Provide authToken";
-                    filterContext.Result = new JsonResult("Please Provide authToken")
+                    context.HttpContext.Response.StatusCode = (int)HttpStatusCode.ExpectationFailed;
+                    context.HttpContext.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Please Provide authToken";
+                    context.Result = new JsonResult("Please Provide authToken")
                     {
                         Value = new
                         {
@@ -144,7 +141,7 @@ namespace IBBusinessService.Api.Filters
 
             var data = roleMappings.Where(w => w.ControllerName.ToLower().Equals(ControllerName.ToLower())
                                                && w.Action.ToLower().Equals(methodType));
-            if (data.FirstOrDefault() != null && data.FirstOrDefault().Allowed == true)
+            if (data.FirstOrDefault() != null && data.FirstOrDefault().Allowed)
                 return true;
             else
                 return false;

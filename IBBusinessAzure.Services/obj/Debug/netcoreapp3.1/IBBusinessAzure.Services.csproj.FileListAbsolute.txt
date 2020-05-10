@@ -1,0 +1,12 @@
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.deps.json
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\bin\Debug\netcoreapp3.1\IBBusinessAzure.Services.pdb
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.dll
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\bin\Debug\netcoreapp3.1\IBBusinessService.Domain.pdb
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.csprojAssemblyReference.cache
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.csproj.CoreCompileInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.AssemblyInfoInputs.cache
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.AssemblyInfo.cs
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.csproj.CopyComplete
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.dll
+D:\Projects\IBBuisnessService\IBBusinessAzure.Services\obj\Debug\netcoreapp3.1\IBBusinessAzure.Services.pdb
